@@ -1,0 +1,82 @@
+.container-fluid {
+	padding: 3em;
+}
+.jumbotron {
+	padding: 1em;
+}
+#main_title {
+	text-align: center;
+}
+.make_meal {
+	margin: 2em auto;
+	text-align: center;
+}
+.progress {
+	width: 70%;
+	margin: 1em auto;
+}
+.cheese_image {
+	border-radius: 1em;
+	width: 100%;
+}
+.progress_section {
+	margin-top: 3em;
+}
+h1 {
+	font-size: 2em;
+}
+.cheese_recipe p {
+	text-align: center;
+	font-size: 1.5em;
+	color: rgba(255,255,255,1);
+	background: black;
+	background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+	padding: 10px;
+	line-height: 28px;
+	text-align: justify;
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	height:30px;
+	transition: height .5s;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+}
+small {
+ opacity: 0; 
+}
+.show-description p {
+ height: 150px; 
+}
+.show-description small {
+ opacity:1; 
+}
+.halloumi_recipe{
+  background-image: url("halloumi_recipe.jpg");
+}
+.gorgonzola_recipe {
+  background-image: url("#");
+}
+.swiss_cheese_recipe {
+  background-image: url("#");
+}
+.camembert_recipe{
+  background-image: url("#");
+}
+.red_leicester_recipe {
+  background-image: url("#");
+}
+.cottage_cheese_recipe {
+  background-image: url("#");
+}
+.cheese_recipe {
+	margin: 0 auto;
+	width: 70%;
+	background-size: cover;
+}
+p {
+	text-align:center;
+	font-size: 1.5em;
+}

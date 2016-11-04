@@ -8,25 +8,74 @@
 		<script src="scripts.js"></script>
 	</head>
 	<body>
-		<div class= "jumbotron">
-			<h1>Cheese Dating</h1>
-			<!-- I've inputted vectorised cheese images here - feel free to replace if you find others you prefer! -->
-			<div class="row">
-				<div class="col-lg-2 col-md-2"><img src="halloumi.png" class="img-responsive" alt="Halloumi"></div>
-  				<div class="col-lg-2 col-md-2"><img src="gorgonzola.png" class="img-responsive" alt="Gorgonzola"></div>
-  				<div class="col-lg-2 col-md-2"><img src="swiss_cheese.png" class="img-responsive" alt="Swiss Cheese"></div>
-  				<div class="col-lg-2 col-md-2"><img src="camembert.svg" class="img-responsive" alt="Camembert">/div>
-  				<div class="col-lg-2 col-md-2"><img src="red_leicester.svg" class="img-responsive" alt="Red Leicester"></div>
-  				<div class="col-lg-2 col-md-2"><img src="cream_cheese.svg" class="img-responsive" alt="Cream Cheese"></div>
+		<div class= "container-fluid">
+			<div class= "jumbotron">
+				<span id= "main_title"><h1>Cheese Dating</h1></span>
+				<!-- Because of the thumbnail property I've used, my vectorised (first) image has been unvectorised, but I quite like how it looks when you select it. Shall we leave it like that for now? R x -->
+				<div class="row">
+					<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese"></a></div>
+				</div>
+				<!-- The below button will eventually be a plate image. I've made it a submit button, with the images being the "input". Does that make sense? R x -->
+				<div class="row make_meal">
+					<div class="col-lg-12 col-md-12"><input type="submit" class="btn btn-lg btn-success" value="Make Me a Meal!"> </div>
+				</div>
 			</div>
-			<!-- The below button will eventually be a plate image. I've made it a submit button, with the images being the "input". Does that make sense? R x -->
-			<input type="submit" class="btn btn-lg btn-info" value="Make Me a Meal!"> 
-		</div>
-		<div class="progress">
-			<!-- I've added a progress bar, just for fun really, and it seems relatively simple to include using Bootstrap. Might be more hassle than it's worth, though. R x -->
- 			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    			<span class="sr-only">60% Complete</span>
-  			</div>
+			<div class="container halloumi_recipe cheese_recipe">
+				<h1>Halloumi Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="container gorgonzola_recipe cheese_recipe">
+				<h1>Gorgonzola Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="container swiss_cheese_recipe cheese_recipe">
+				<h1>Swiss Cheese Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="container camembert_recipe cheese_recipe">
+				<h1>Camembert Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="container red_leicester_recipe cheese_recipe">
+				<h1>Red Leicester Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="container cottage_cheese_recipe cheese_recipe">
+				<h1>Cottage Cheese Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+			<div class="progress_section">
+				<p>How close am I to dinner?</p>
+				<!-- I've added a progress bar, just for fun really, and it seems relatively simple to include using Bootstrap. Might be more hassle than it's worth, though. R x -->
+				<div class="progress">
+		 			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+		    			<span class="sr-only">60% Complete</span>
+		  			</div>
+				</div>	
+			</div>
 		</div>
 	</body>
 </html>
