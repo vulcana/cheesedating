@@ -8,22 +8,32 @@
 		<script src="scripts.js"></script>
 	</head>
 	<body>
-		<form action="demo_form.asp">
-  <input type="checkbox" name="cheese" id="cheese1"> Cheese1<br>
-  <input type="checkbox" name="cheese" id="cheese2"> Cheese2 <br>
-</form>  
+	 <div class="row">
+					<div class="col-lg-2 col-md-2 cheese_div"><a href="#" class="thumbnail" id="halloumi_cheese"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi"></a></div>
+	  				<div class="col-lg-2 col-md-2 cheese_div"><a href="#" class="thumbnail" id="gorgonzola_cheese"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola"></a></div>
+</div>
+				</div>
 
-<button   id="btn1">Make me a dish!</button>
+<button   id="make">Make me a dish!</button>
 </form>
  <button id="reset">Reset</button>
 </form>
 
-<div class="recipe" id="recipe1">
-  <h2>Recipe1</h2>
-</div>
-<div class="recipe" id="recipe2">
-  <h2>Recipe2</h2>
-</div>
+<div class="container halloumi_recipe cheese_recipe">
+				<h1>Halloumi Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
+<div class="container gorgonzola_recipe cheese_recipe">
+				<h1>Gorgonzola Recipe</h1>
+				<div class="btn-group" role="group">
+ 					<button type="button" class="btn btn-success">Yes</button>
+  					<button type="button" class="btn btn-danger">No</button>
+				</div>
+			</div>
 
+	
 	</body>
 </html>

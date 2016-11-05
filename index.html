@@ -13,16 +13,17 @@
 				<span id= "main_title"><h1>Cheese Dating</h1></span>
 				<!-- Because of the thumbnail property I've used, my vectorised (first) image has been unvectorised, but I quite like how it looks when you select it. Shall we leave it like that for now? R x -->
 				<div class="row">
-					<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi"></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola"></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese"></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert"></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester"></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese"></a></div>
+					<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="halloumi_cheese"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="gorgonzola_cheese"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="swiss_cheese"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="camembert"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="red_leicester"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester"></a></div>
+	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="cottage_cheese"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese"></a></div>
 				</div>
 				<!-- The below button will eventually be a plate image. I've made it a submit button, with the images being the "input". Does that make sense? R x -->
 				<div class="row make_meal">
-					<div class="col-lg-12 col-md-12"><input type="submit" class="btn btn-lg btn-success" value="Make Me a Meal!"> </div>
+					<div class="col-lg-12 col-md-12"><input type="submit" class="btn btn-lg btn-success" value="Make Me a Meal!" id="make"> </div>
+					 <button class="btn" id="reset">Reset</button>
 				</div>
 			</div>
 			<div class="container halloumi_recipe cheese_recipe">

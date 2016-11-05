@@ -12,32 +12,57 @@ $(function() {
 		}
 		});
 });
-
-$('#recipe1').hide()
-$('#recipe2').hide()
-
-$( "input" ).on( "click", function() {
-  if($('#cheese1').is(":checked")){
-     $("#recipe1" ).addClass("selected" );
-  }
+//hide all recipes as default
+$(function() {
+	$('.cheese_recipe').hide()
 });
 
-$( "input" ).on( "click", function() {
-  if($('#cheese2').is(":checked")){
-     $("#recipe2" ).addClass("selected" );
-  }
+//select the selected cheeses by adding "selected" calss
+$(function() {
+$("#halloumi_cheese").click(function(){
+    $(".halloumi_recipe" ).addClass("selected");
+            });
 });
+$(function() {
+$("#gorgonzola_cheese").click(function(){
+    $(".gorgonzola_recipe" ).addClass("selected" );
+            });
+}); 
+$(function() {
+$("#swiss_cheese").click(function(){
+    $(".swiss_cheese_recipe" ).addClass("selected" );
+            });
+}); 
+$(function() {
+$("#camembert").click(function(){
+    $(".camembert_recipe" ).addClass("selected" );
+            });
+}); 
+$(function() {
+$("#red_leicester").click(function(){
+    $(".red_leicester_recipe" ).addClass("selected" );
+            });
+}); 
+$(function() {
+$("#cottage_cheese").click(function(){
+    $(".cottage_cheese_recipe" ).addClass("selected" );
+            });
+}); 
 
-$("#btn1").click(function(){
+$(function() {
+$("#make").click(function(){
     $(".selected").show();
 });
-
+}); 
+$(function() {
 $("#reset").click(function(){
     $(".recipe").hide();
   });
+}); 
 
+$(function() {
 $("#reset").click(function(){
-    $(".recipe").hide();
-    $(".recipe").removeClass("selected");
-    $('input:checkbox').removeAttr('checked');
+    $(".cheese_recipe").hide();
+    $(".cheese_recipe").removeClass("selected");
+}); 
 }); 
