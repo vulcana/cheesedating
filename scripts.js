@@ -21,31 +21,38 @@ $(function() {
 $(function() {
 $("#halloumi_cheese").click(function(){
     $(".halloumi_recipe" ).addClass("selected");
+    $("#halloumi_cheese").css({"border-color":"#337ab7"});
             });
 });
+
 $(function() {
 $("#gorgonzola_cheese").click(function(){
     $(".gorgonzola_recipe" ).addClass("selected" );
+    $("#gorgonzola_cheese").css({"border-color":"#337ab7"});
             });
 }); 
 $(function() {
 $("#swiss_cheese").click(function(){
     $(".swiss_cheese_recipe" ).addClass("selected" );
+    $("#swiss_cheese").css({"border-color":"#337ab7"});
             });
 }); 
 $(function() {
 $("#camembert").click(function(){
     $(".camembert_recipe" ).addClass("selected" );
+    $("#camembert").css({"border-color":"#337ab7"});
             });
 }); 
 $(function() {
 $("#red_leicester").click(function(){
     $(".red_leicester_recipe" ).addClass("selected" );
+    $("#red_leicester").css({"border-color":"#337ab7"});
             });
 }); 
 $(function() {
 $("#cottage_cheese").click(function(){
     $(".cottage_cheese_recipe" ).addClass("selected" );
+    $("#cottage_cheese").css({"border-color":"#337ab7"});
             });
 }); 
 
@@ -64,5 +71,6 @@ $(function() {
 $("#reset").click(function(){
     $(".cheese_recipe").hide();
     $(".cheese_recipe").removeClass("selected");
+    $(".thumbnail").css({"border-color":"transparent"});
 }); 
 }); 
