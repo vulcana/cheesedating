@@ -57,7 +57,7 @@ $("#cottage_cheese").click(function(){
 }); 
 
 $(function() {
-$("#make").click(function(){
+$("#make_button").click(function(){
     $(".selected").show();
 });
 }); 
@@ -74,3 +74,7 @@ $("#reset").click(function(){
     $(".thumbnail").css({"border-color":"transparent"});
 }); 
 }); 
+
+//$(function() {
+//$("#make_button").hover(function(){
+//$("#cheeseboard").spin!! I don`t know how to do that. adding hover class doen`t work.

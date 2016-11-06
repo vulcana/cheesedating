@@ -86,9 +86,25 @@ p {
 	text-align:center;
 	font-size: 1.5em;
 }
+#cheeseboard {
+	height: 200px;
+	border-radius: 200px;
+	position: relative;
+  	right: -80px;
+}
 
-#make:hover {
-        -webkit-animation-name: spin;
+#make_button {
+	position: relative;
+  	left: -110px;
+}
+
+#cheeseboard:active{
+	border-radius:2px;
+}
+
+
+#cheeseboard:hover {
+    -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
