@@ -34,6 +34,9 @@ a.thumbnail.active {
 .progress_section {
 	margin-top: 3em;
 }
+#reset {
+	margin: 1em;
+}
 h1 {
 	font-size: 2em;
 }
