@@ -19,6 +19,11 @@
 	border-radius: 1em;
 	width: 100%;
 }
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: #ffd500;
+}
 .progress_section {
 	margin-top: 3em;
 }
