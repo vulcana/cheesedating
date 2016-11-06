@@ -22,6 +22,7 @@
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
+  border: 2px solid;
   border-color: #ffd500;
 }
 .progress_section {
