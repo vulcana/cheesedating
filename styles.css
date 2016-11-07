@@ -11,6 +11,12 @@
 	margin: 2em auto;
 	text-align: center;
 }
+#make_button {
+	position: relative;
+  	left: -110px;
+  	background-color: rgba(0, 0, 0, 0.5);
+  	border-color: black;
+}
 .progress {
 	width: 70%;
 	margin: 1em auto;
@@ -50,6 +56,12 @@ h1 {
 	-webkit-transition: height .5s;
 	-moz-transition: height .5s;
 }
+.cheese_recipe {
+	margin: 0 auto;
+	width: 70%;
+	background-size: cover;
+}
+
 small {
  opacity: 0; 
 }
@@ -77,11 +89,7 @@ small {
 .cottage_cheese_recipe {
   background-image: url("#");
 }
-.cheese_recipe {
-	margin: 0 auto;
-	width: 70%;
-	background-size: cover;
-}
+
 p {
 	text-align:center;
 	font-size: 1.5em;
@@ -92,17 +100,6 @@ p {
 	position: relative;
   	right: -80px;
 }
-
-#make_button {
-	position: relative;
-  	left: -110px;
-}
-
-#cheeseboard:active{
-	border-radius:2px;
-}
-
-
 #cheeseboard:hover {
     -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
@@ -122,6 +119,25 @@ p {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.spin {
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }
