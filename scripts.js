@@ -64,9 +64,14 @@ $("#cottage_cheese").click(function(){
 
 //Make mea meal!
 $(function() {
+$("#make_button").hover(function(){
+  });
+}); 
+
+$(function() {
 $("#make_button").click(function(){
     $(".selected").show();
-});
+  });
 }); 
 
 //cheeseboard spins when mouse is on on the makemeal button area too.
