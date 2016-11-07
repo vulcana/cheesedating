@@ -37,6 +37,9 @@ a.thumbnail.active {
 h1 {
 	font-size: 2em;
 }
+/* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
+I've probably missed something! Ruth*/
+
 .cheese_recipe p {
 	text-align: center;
 	font-size: 1.5em;
@@ -60,6 +63,7 @@ h1 {
 	margin: 0 auto;
 	width: 70%;
 	background-size: cover;
+    border-radius: 10px;
 }
 
 #make_button:hover {
@@ -78,7 +82,7 @@ small {
  opacity:1; 
 }
 .halloumi_recipe{
-  background-image: url("halloumi_recipe.jpg");
+  background-image: url("halloumi_recipe2.jpg");
 }
 .gorgonzola_recipe {
   background-image: url("#");
@@ -163,4 +167,64 @@ p {
     to {
         transform:rotate(360deg);
     }
+}
+
+
+/* I've added some trial css for the recipe boxes. 
+Can be changed later if needed. Still a work in progress! Ruth */
+
+.cheese_recipe h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    }
+
+.ingredients {
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ingredients ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients h2 {
+    padding-bottom: 15px;
+}
+
+.method {
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.method h2 {
+    padding-bottom: 15px;
+}
+
+.method ol {
+    padding: 0;
+}
+
+.method li {
+    padding: 0;
+    margin: 10px 0;
+    list-style-type: none;
+    counter-increment: item;
+}
+
+.method li:before {
+  display: inline-block;
+  padding-right: 0.5em;  
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
 }
