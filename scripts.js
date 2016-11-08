@@ -95,3 +95,27 @@ $("#reset").click(function(){
     $("#cheeseboard").removeClass("spin" );
 }); 
 }); 
+
+//hide the divs containing method and ingredients as default
+$(function() {
+    $(".ingredients").hide()
+    $(".method").hide()
+});
+
+
+//the ingredients and method appear when user clicks 'tell me more' button
+
+$(function() {
+$(".tell_me_more").click(function(){
+    $(".ingredients").show();
+    $(".method").show();
+  });
+}); 
+
+//the no, gross button hides the recipe and returns user to the top of the page
+$(function() {
+$(".no_gross").click(function(){
+    $(".cheese_recipe").hide();
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+}); 
