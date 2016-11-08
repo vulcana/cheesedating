@@ -96,10 +96,11 @@ $("#reset").click(function(){
 }); 
 }); 
 
+
 //hide the divs containing method and ingredients as default
 $(function() {
-    $(".ingredients").hide()
-    $(".method").hide()
+    $(".ingredients").hide();
+    $(".method").hide();
 });
 
 
@@ -117,5 +118,9 @@ $(function() {
 $(".no_gross").click(function(){
     $(".cheese_recipe").hide();
     $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $(".ingredients").hide();
+    $(".method").hide();
   });
 }); 
+
+
