@@ -1,9 +1,23 @@
 .container-fluid {
-	padding: 3em;
+	padding: 0.5em;
 }
+
+
 .jumbotron {
 	padding: 1em;
 }
+
+
+.cheese_bit{
+    background: rgba(0, 0, 0, 0);
+}
+
+.page_background{
+    background-image: url("background.jpg");
+    background-size: cover; 
+
+}
+
 #main_title {
 	text-align: center;
 }
@@ -38,7 +52,10 @@ a.thumbnail.active {
 	margin-top: 2em;
 }
 h1 {
-	font-size: 2em;
+	font-size: 20em;
+    font-family:'Londrina Shadow', cursive;
+    color:black;
+
 }
 /* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
 I've probably missed something! Ruth*/
