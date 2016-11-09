@@ -113,8 +113,6 @@ p {
 #cheeseboard {
 	height: 200px;
 	border-radius: 200px;
-	position: relative;
-  	right: -85px;
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
