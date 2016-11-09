@@ -34,9 +34,6 @@ a.thumbnail.active {
 #instructions {
 	text-align: center;
 }
-.progress_section {
-	margin-top: 3em;
-}
 #reset {
 	margin-top: 2em;
 }
@@ -157,7 +154,9 @@ p {
 .progress-bar{
     background-image: url("wood.jpg");
 }
-
+.progress_section {
+	margin-top: 3em;
+}
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }

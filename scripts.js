@@ -137,7 +137,9 @@ function init() {
   $('#red_leicester').draggable();
   $('#cottage_cheese').draggable();
 }
-// progress bar
-
+// progress bar events
+$(".cheese_image").select(function() {
+    $(".progress-bar").css("width", "33%") 
+});
 
 
