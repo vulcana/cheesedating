@@ -26,41 +26,41 @@ $(function() {
 //     $("#halloumi_cheese").css({"border-width":"2px"});
 //             });
 // });
-$(function() {
-$("#gorgonzola_cheese").click(function(){
-    $(".gorgonzola_recipe" ).addClass("selected" );
-    $("#gorgonzola_cheese").css({"border-color":"#ffd500"});
-    $("#gorgonzola_cheese").css({"border-width":"2px"});
-            });
-}); 
-$(function() {
-$("#swiss_cheese").click(function(){
-    $(".swiss_cheese_recipe" ).addClass("selected" );
-    $("#swiss_cheese").css({"border-color":"#ffd500"});
-    $("#swiss_cheese").css({"border-width":"2px"});
-            });
-}); 
-$(function() {
-$("#camembert").click(function(){
-    $(".camembert_recipe" ).addClass("selected" );
-    $("#camembert").css({"border-color":"#ffd500"});
-    $("#camembert").css({"border-width":"2px"});
-            });
-}); 
-$(function() {
-$("#red_leicester").click(function(){
-    $(".red_leicester_recipe" ).addClass("selected" );
-    $("#red_leicester").css({"border-color":"#ffd500"});
-    $("#red_leicester").css({"border-width":"2px"});
-            });
-}); 
-$(function() {
-$("#cottage_cheese").click(function(){
-    $(".cottage_cheese_recipe" ).addClass("selected" );
-    $("#cottage_cheese").css({"border-color":"#ffd500"});
-    $("#cottage_cheese").css({"border-width":"2px"});
-            });
-}); 
+// $(function() {
+// $("#gorgonzola_cheese").click(function(){
+//     $(".gorgonzola_recipe" ).addClass("selected" );
+//     $("#gorgonzola_cheese").css({"border-color":"#ffd500"});
+//     $("#gorgonzola_cheese").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#swiss_cheese").click(function(){
+//     $(".swiss_cheese_recipe" ).addClass("selected" );
+//     $("#swiss_cheese").css({"border-color":"#ffd500"});
+//     $("#swiss_cheese").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#camembert").click(function(){
+//     $(".camembert_recipe" ).addClass("selected" );
+//     $("#camembert").css({"border-color":"#ffd500"});
+//     $("#camembert").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#red_leicester").click(function(){
+//     $(".red_leicester_recipe" ).addClass("selected" );
+//     $("#red_leicester").css({"border-color":"#ffd500"});
+//     $("#red_leicester").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#cottage_cheese").click(function(){
+//     $(".cottage_cheese_recipe" ).addClass("selected" );
+//     $("#cottage_cheese").css({"border-color":"#ffd500"});
+//     $("#cottage_cheese").css({"border-width":"2px"});
+//             });
+// }); 
 
 //Make mea meal!
 $(function() {
