@@ -12,10 +12,9 @@
 	text-align: center;
 }
 #make_button {
-	position: relative;
-  	left: -106px;
   	background-color: rgba(0, 0, 0, 0.5);
   	border-color: black;
+    margin: 20px;
 }
 .progress {
 	width: 70%;
@@ -111,8 +110,9 @@ p {
 	font-size: 1.5em;
 }
 #cheeseboard {
-	height: 200px;
+	height: 300px;
 	border-radius: 200px;
+    margin: 20px;
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
