@@ -13,7 +13,7 @@
 }
 #make_button {
 	position: relative;
-  	left: -110px;
+  	left: -106px;
   	background-color: rgba(0, 0, 0, 0.5);
   	border-color: black;
 }
@@ -35,7 +35,7 @@ a.thumbnail.active {
 	margin-top: 3em;
 }
 #reset {
-	margin: 1em;
+	margin-top: 2em;
 }
 h1 {
 	font-size: 2em;
@@ -111,7 +111,7 @@ p {
 	height: 200px;
 	border-radius: 200px;
 	position: relative;
-  	right: -80px;
+  	right: -85px;
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
