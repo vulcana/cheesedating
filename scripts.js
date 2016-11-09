@@ -136,6 +136,13 @@ function init() {
   $('#camembert').draggable();
   $('#red_leicester').draggable();
   $('#cottage_cheese').draggable();
+  $('#cheeseboard').droppable( {
+    drop: handleDropEvent
+  } );
+}
+function handleDropEvent( event, ui ) {
+  var draggable = ui.draggable;
+  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
 }
 
 
