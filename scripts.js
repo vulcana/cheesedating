@@ -31,6 +31,7 @@ $("#gorgonzola_cheese").click(function(){
     $(".gorgonzola_recipe" ).addClass("selected" );
     $("#gorgonzola_cheese").css({"border-color":"#ffd500"});
     $("#gorgonzola_cheese").css({"border-width":"2px"});
+    // $(".progress-bar").css("width: 30%")
             });
 }); 
 $(function() {
@@ -138,8 +139,11 @@ function init() {
   $('#cottage_cheese').draggable();
 }
 // progress bar events
-$(".cheese_image").select(function() {
-    $(".progress-bar").css("width", "33%") 
+// $(".cheese_image").select(function() {
+//     $(".progress-bar").css("width: 30%") 
+//     $(".page_background").css("color: blue")
+// });
+$(".cheese_image").click(function(){
+    $(".progress-bar").css("width", "33%");
 });
-
 
