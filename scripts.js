@@ -126,5 +126,16 @@ $(".no_gross").click(function(){
     $(".thumbnail").css({"border-color":"transparent"});
   });
 }); 
+//makes cheese img draggable
+$( init );
+ 
+function init() {
+  $('#halloumi_cheese').draggable();
+  $('#gorgonzola_cheese').draggable();
+  $('#swiss_cheese').draggable();
+  $('#camembert').draggable();
+  $('#red_leicester').draggable();
+  $('#cottage_cheese').draggable();
+}
 
 
