@@ -31,6 +31,9 @@ a.thumbnail.active {
   border: 2px solid;
   border-color: #ffd500;
 }
+#instructions {
+	text-align: center;
+}
 .progress_section {
 	margin-top: 3em;
 }
