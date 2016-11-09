@@ -19,13 +19,13 @@ $(function() {
 
 //select the recipes corresponding to selected cheeses by adding "selected" calss
 //also add the border properties to stay
-$(function() {
-$("#halloumi_cheese").click(function(){
-    $(".halloumi_recipe" ).addClass("selected");
-    $("#halloumi_cheese").css({"border-color":"#ffd500"});
-    $("#halloumi_cheese").css({"border-width":"2px"});
-            });
-});
+// $(function() {
+// $("#halloumi_cheese").click(function(){
+//     $(".halloumi_recipe" ).addClass("selected");
+//     $("#halloumi_cheese").css({"border-color":"#ffd500"});
+//     $("#halloumi_cheese").css({"border-width":"2px"});
+//             });
+// });
 $(function() {
 $("#gorgonzola_cheese").click(function(){
     $(".gorgonzola_recipe" ).addClass("selected" );
@@ -137,12 +137,35 @@ function init() {
   $('#red_leicester').draggable();
   $('#cottage_cheese').draggable();
   $('#cheeseboard').droppable( {
-    drop: handleDropEvent
+    drop: cheeseonboard
+    // out: cheeseoffboard
   } );
 }
-function handleDropEvent( event, ui ) {
+function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
   alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+  if (draggable.attr('id') == "halloumi_cheese")
+  {
+    $(".halloumi_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "gorgonzola_cheese")
+  {
+    $(".gorgonzola_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "swiss_cheese")
+  {
+    $(".swiss_cheese_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "camembert")
+  {
+    $(".camembert_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "red_leicester")
+  {
+    $(".red_leicester_recipe" ).addClass("selected" );
+  }
 }
+
+
 
 

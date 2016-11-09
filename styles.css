@@ -23,6 +23,7 @@
 .cheese_image {
 	border-radius: 1em;
 	width: 100%;
+    z-index: 2;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -113,6 +114,7 @@ p {
 	height: 300px;
 	border-radius: 200px;
     margin: 20px;
+    z-index: 0;
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
@@ -239,4 +241,13 @@ Can be changed later if needed. Still a work in progress! Ruth */
   font-weight: bold;
   text-align: right;
   content: counter(item) ".";
+}
+.boarddiv{
+    z-index: 1;
+}
+.cheeseimg{
+    z-index: 2;
+}
+.thumbnail{
+    z-index: 2;
 }
