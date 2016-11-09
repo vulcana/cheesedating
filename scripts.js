@@ -92,7 +92,6 @@ $("#reset").click(function(){
     $(".cheese_recipe").hide();
     $(".cheese_recipe").removeClass("selected");
     $(".thumbnail").css({"border-color":"transparent"});
-    $("#cheeseboard").removeClass("spin" );
 }); 
 }); 
 
@@ -113,13 +112,15 @@ $(".tell_me_more").click(function(){
   });
 }); 
 
-//the no, gross button hides the recipe and returns user to the top of the page
+//the no, gross button hides the recipe and returns user to the top of the page and removes border on cheese
 $(function() {
 $(".no_gross").click(function(){
     $(".cheese_recipe").hide();
+    $(".cheese_recipe").removeClass("selected");
     $('html, body').animate({ scrollTop: 0 }, 'slow');
     $(".ingredients").hide();
     $(".method").hide();
+    $(".thumbnail").css({"border-color":"transparent"});
   });
 }); 
 
