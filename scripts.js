@@ -146,4 +146,9 @@ function init() {
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
 });
-
+$(".make_meal").click(function(){
+    $(".progress-bar").css("width", "66%");
+});
+$(".tell_me_more").click(function(){
+    $(".progress-bar").css("width", "100%"; "border", "2px solid"; "border-color", "#ffd500";);
+});
