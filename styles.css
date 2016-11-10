@@ -55,7 +55,6 @@ h1 {
 	font-size: 20em;
     font-family:'Londrina Shadow', cursive;
     color:black;
-
 }
 /* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
 I've probably missed something! Ruth*/
@@ -85,7 +84,9 @@ I've probably missed something! Ruth*/
 	background-size: cover;
     border-radius: 10px;
 }
-
+.cheese_name {
+	color: #ffd500;
+}
 #make_button:hover {
 	box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
 	}
@@ -167,12 +168,29 @@ p {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
+.centered_buttons {
+	text-align: center;
+	margin: 0 auto;
+}
 .progress-bar {
     background-image: url("wood.jpg");
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 2px;
 }
-.progress_section {
-	margin-top: 3em;
+.navbar-fixed-bottom {
+	background-color: rgba(255, 255, 255, 0.4);
+	border: none;
+}
+.navbar-default {
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	width: cover;
+	position:fixed;
+}
+#logo {
+	width: 15%;
+	margin-top: -25px;
 }
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }

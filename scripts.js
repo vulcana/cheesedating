@@ -110,11 +110,48 @@ $(function() {
 //the ingredients and method appear when user clicks 'tell me more' button
 
 $(function() {
-$(".tell_me_more").click(function(){
-    $(".ingredients").show();
-    $(".method").show();
+$(".halloumi_buttons.tell_me_more").click(function(){
+    $(".halloumi_ingredients").show();
+    $(".halloumi_method").show();
   });
 }); 
+
+$(function() {
+$(".swiss_cheese_buttons.tell_me_more").click(function(){
+    $(".swiss_cheese_ingredients").show();
+    $(".swiss_cheese_method").show();
+  });
+}); 
+
+$(function() {
+$(".camembert_buttons.tell_me_more").click(function(){
+    $(".camembert_ingredients").show();
+    $(".camembert_method").show();
+  });
+}); 
+
+$(function() {
+$(".red_leicester_buttons.tell_me_more").click(function(){
+    $(".red_leciester_ingredients").show();
+    $(".red_leicester_method").show();
+  });
+}); 
+
+
+$(function() {
+$(".cottage_cheese_buttons.tell_me_more").click(function(){
+    $(".cottage_cheese_ingredients").show();
+    $(".cottage_cheese_method").show();
+  });
+}); 
+
+$(function() {
+$(".gorgonzola_buttons.tell_me_more").click(function(){
+    $(".gorgonzola_ingredients").show();
+    $(".gorgonzola_method").show();
+  });
+}); 
+
 
 //the no, gross button hides the recipe and returns user to the top of the page and removes cheese selection
 $(function() {
@@ -138,11 +175,7 @@ function init() {
   $('#red_leicester').draggable();
   $('#cottage_cheese').draggable();
 }
-// progress bar events
-// $(".cheese_image").select(function() {
-//     $(".progress-bar").css("width: 30%") 
-//     $(".page_background").css("color: blue")
-// });
+
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
 });
@@ -150,5 +183,5 @@ $(".make_meal").click(function(){
     $(".progress-bar").css("width", "66%");
 });
 $(".tell_me_more").click(function(){
-    $(".progress-bar").css("width", "100%"; "border", "2px solid"; "border-color", "#ffd500";);
+    $(".progress-bar").css("width", "100%");
 });
