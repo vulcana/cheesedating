@@ -80,11 +80,7 @@ $("#make_button").hover(function(){
 $("#cheeseboard").addClass("spin" );
 }); 
 }); 
-$(function() {
-$("#make_button").mouseleave(function() {
-  $("#cheeseboard").removeClass("spin" );
-}); 
-}); 
+
 
 //reset button
 $(function() {
@@ -143,7 +139,7 @@ function init() {
 }
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
-  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+  $("#cheeseboard").addClass("spin" );
   if (draggable.attr('id') == "halloumi_cheese")
   {
     $(".halloumi_recipe" ).addClass("selected" );
@@ -165,7 +161,3 @@ function cheeseonboard( event, ui ) {
     $(".red_leicester_recipe" ).addClass("selected" );
   }
 }
-
-
-
-

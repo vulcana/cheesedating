@@ -23,13 +23,15 @@
 .cheese_image {
 	border-radius: 1em;
 	width: 100%;
-    z-index: 2;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border: 2px solid;
   border-color: #ffd500;
+}
+.thumbnail {
+    z-index: +2;
 }
 #instructions {
 	text-align: center;
@@ -114,27 +116,8 @@ p {
 	height: 300px;
 	border-radius: 200px;
     margin: 20px;
-    z-index: 0;
 }
-#cheeseboard:hover {
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+
 .spin {
 	-webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
@@ -241,13 +224,4 @@ Can be changed later if needed. Still a work in progress! Ruth */
   font-weight: bold;
   text-align: right;
   content: counter(item) ".";
-}
-.boarddiv{
-    z-index: 1;
-}
-.cheeseimg{
-    z-index: 2;
-}
-.thumbnail{
-    z-index: 2;
 }
