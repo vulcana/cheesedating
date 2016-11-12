@@ -10,12 +10,13 @@
 
 .cheese_bit{
     background: rgba(0, 0, 0, 0);
+    padding-bottom:100px;
 }
 
 .page_background{
     background-image: url("background.jpg");
     background-size: cover; 
-
+    margin:0 auto;
 }
 
 #main_title {
@@ -55,7 +56,14 @@ h1 {
 	font-size: 20em;
     font-family:'Londrina Shadow', cursive;
     color:black;
+    margin:0 auto;
 }
+
+h2 {
+    margin:0 auto;
+}
+
+
 /* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
 I've probably missed something! Ruth*/
 
@@ -83,6 +91,7 @@ I've probably missed something! Ruth*/
 	width: 70%;
 	background-size: cover;
     border-radius: 10px;
+    margin-bottom: 80px;
 }
 .cheese_name {
 	color: #ffd500;
@@ -181,6 +190,7 @@ p {
 .navbar-fixed-bottom {
 	background-color: rgba(255, 255, 255, 0.4);
 	border: none;
+    color:white;
 }
 .navbar-default {
 	background-color: rgba(255, 255, 255, 0);
@@ -307,3 +317,9 @@ Can be changed later if needed. Still a work in progress! Ruth */
 .deg180 { transform: translate(-12em); }
 .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+
+#about_text{
+    background-image:url("wood.jpg");
+    color:white;
+    border-color:white;
+}

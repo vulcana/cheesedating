@@ -72,8 +72,11 @@ $("#make_button").hover(function(){
 $(function() {
 $("#make_button").click(function(){
     $(".selected").show();
+    $('html, body').animate({
+      scrollTop: $(".selected").offset().top
+    }, 2000);
+});
   });
-}); 
 
 //cheeseboard spins when mouse is on on the makemeal button area too.
 $(function() {
@@ -185,3 +188,42 @@ $(".make_meal").click(function(){
 $(".tell_me_more").click(function(){
     $(".progress-bar").css("width", "100%");
 });
+
+//hide twitter feed
+$(function() {
+  $("#twitterfeed").hide();
+});
+
+//show twitter feed when hover over twitter-btn. Looking to change this to first click show, second click hide. F
+$(function() {
+$(".twitter-btn").hover(function(){
+    $("#twitterfeed").show();
+    $('html, body').animate({
+      scrollTop: $("#twitterfeed").offset().top
+    }, 0);
+  }); 
+}); 
+
+$(function() {
+$(".twitter-btn").mouseleave(function() {
+  $("#twitterfeed").hide();
+  }); 
+}); 
+
+//same as above for about text. I'll probably change this to be a dropdown from the navbar instead. F x
+$(function() {
+  $("#about_text").hide();
+});
+
+$(function() {
+$(".about-btn").hover(function() {
+  $("#about_text").show();
+  }); 
+}); 
+
+$(function() {
+$(".about-btn").mouseleave(function() {
+  $("#about_text").hide();
+  }); 
+}); 
+

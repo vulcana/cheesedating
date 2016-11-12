@@ -18,9 +18,8 @@
 	  				<div class="container-fluid">
 	    				<div class="navbar-header">
 	      					<a class="navbar-brand" href="#main_title"><img id="logo" alt="Brand" src="logo.png"></a>
-	      					<button class="btn navbar-btn">Top</button>
-							<button class="btn navbar-btn">About</button> 
-							<button class="btn-twitter btn navbar-btn">Twitter</button>
+							<button class="btn navbar-btn about-btn">About</button> 
+							<button class="btn navbar-btn twitter-btn">#Cheese</button>
 	      				</div>
 	  				</div>
 				</nav>
@@ -28,21 +27,34 @@
 					<span id= "main_title"><h1>Cheese Dating</h1></span>
 					<!-- Because of the thumbnail property I've used, my vectorised (first) image has been unvectorised, but I quite like how it looks when you select it. Shall we leave it like that for now? R x They are great! Can you make them the same size? M -->
 					<span id= "instructions"><h2>Select your cheese(s)</h2></span>
-					<div class="circle-container">
-						<div><a href="#" class="thumbnail deg0" id="halloumi_cheese"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi" title='Halloumi'></a></div>
-		  				<div><a href="#" class="thumbnail deg45" id="gorgonzola_cheese"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola" title='Gorgonzola'></a></div>
-		  				<div><a href="#" class="thumbnail deg135" id="swiss_cheese"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese" title='Swiss Cheese'></a></div>
-		  				<div><a href="#" class="thumbnail deg180" id="camembert deg225"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert" title='Camembert'></a></div>
-		  				<div><a href="#" class="thumbnail deg225" id="red_leicester"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester" title='Red Leicester'></a></div>
-		  				<div><a href="#" class="thumbnail deg315" id="cottage_cheese"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese" title='Cottage Cheese'></a></div>
-		  				<div>
-							<img src="cheeseboard.jpg" id="cheeseboard" class="center">
-						</div>
-						<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
-							<button class="btn" id="reset">Reset</button>
-					</div>	
-					
-				</div>
+					<div class="row">
+						<div class="container-fluid">
+							<div class="col-md-6 col-md-offset-3">
+								<div class="circle-container">
+									<div><a href="#" class="thumbnail deg0" id="halloumi_cheese"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi" title='Halloumi'></a></div>
+					  				<div><a href="#" class="thumbnail deg45" id="gorgonzola_cheese"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola" title='Gorgonzola'></a></div>
+					  				<div><a href="#" class="thumbnail deg135" id="swiss_cheese"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese" title='Swiss Cheese'></a></div>
+					  				<div><a href="#" class="thumbnail deg180" id="camembert"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert" title='Camembert'></a></div>
+					  				<div><a href="#" class="thumbnail deg225" id="red_leicester"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester" title='Red Leicester'></a></div>
+					  				<div><a href="#" class="thumbnail deg315" id="cottage_cheese"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese" title='Cottage Cheese'></a></div>
+					  				<div>
+										<img src="cheeseboard.jpg" id="cheeseboard" class="center">
+									</div>
+									<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
+									<button class="btn" id="reset">Reset</button>
+								</div>
+							</div>	
+							<div class="col-md-3">
+								<div id=twitterfeed>
+								     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
+								</div>
+								<div id="about_text">
+								<p> About text here </p>	
+								</div>	
+							</div>	
+						</div><!--container-->
+					</div> <!--row-->	
+				</div><!--jumbotron-->
 				<div class="container halloumi_recipe cheese_recipe">
 					<h1>Quinoa with Halloumi</h1>
 					<div class="centered_buttons">
@@ -142,18 +154,17 @@
 						</div>
 					</div>
 				</div>
-				<div class=twitterfeed>
-				     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
-				</div>
-				<nav class="navbar navbar-default navbar-fixed-bottom">
-					<p>How close am I to dinner?</p>
-					<div class="progress">
-						<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+				<div class="container">
+					<nav class="navbar navbar-default navbar-fixed-bottom">
+						<p>How close am I to dinner?</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
 							<span class="sr-only">60% Complete</span>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
+					</nav>
+				</div>
+			</div><!--page background-->
 		</div>
 	</body>
 	<script src="scripts.js"></script>
