@@ -188,6 +188,12 @@ p {
 	width: cover;
 	position:fixed;
 }
+
+.btn{
+    background-image: url("wood.jpg");
+    color: white;
+}
+
 #logo {
 	width: 15%;
 	margin-top: -25px;
