@@ -76,14 +76,12 @@ function cheeseonboard( event, ui ) {
 
 
 
-//Make mea meal!
-$(function() {
-$("#make_button").hover(function(){
-  });
-}); 
-
 $(function() {
 $("#make_button").click(function(){
+    if (document.querySelector('.selected') == null) {
+    // .. it does not exists
+      alert( 'Drop a cheese on the cheeseboard!' );
+}
     $(".selected").show();
     $('html, body').animate({
       scrollTop: $(".selected").offset().top

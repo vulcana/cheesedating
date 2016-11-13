@@ -137,9 +137,8 @@ p {
 	font-size: 1.5em;
 }
 #cheeseboard {
-	height: 200px;
-    border-radius: 100px;
-    position: relative;
+	/*height: 200px;*/
+    border-radius: 200px;
     z-index: 0;
 }
 
