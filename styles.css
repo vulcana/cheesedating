@@ -46,6 +46,9 @@ a.thumbnail.active {
   border: 2px solid;
   border-color: #ffd500;
 }
+.thumbnail{
+    z-index: 2;
+}
 #instructions {
 	text-align: center;
 }
@@ -137,8 +140,7 @@ p {
 #cheeseboard {
 	/*height: 200px;*/
     border-radius: 200px;
-	/*position: relative;
-  	right: -85px;*/
+    z-index: 0;
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
