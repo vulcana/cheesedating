@@ -19,8 +19,43 @@ $(function() {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+//hide twitter feed
+$(function() {
+  $("#twitterfeed").hide();
+});
+
+//makes cheese img draggable
+$( init );
+ 
+$(".cheese_image").click(function(){
+    $(".progress-bar").css("width", "33%");
+});
+$(".make_meal").click(function(){
+    $(".progress-bar").css("width", "66%");
+});
+$(".tell_me_more").click(function(){
+    $(".progress-bar").css("width", "100%");
+});
+
+function init() {
+  $('#halloumi_cheese').draggable();
+  $('#gorgonzola_cheese').draggable();
+  $('#swiss_cheese').draggable();
+  $('#camembert').draggable();
+  $('#red_leicester').draggable();
+  $('#cottage_cheese').draggable();
+  $('#cheeseboard').droppable( {
+   drop: cheeseonboard
+        } );
+    }  
+
+
+>>>>>>> origin/master
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
+  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
   $("#cheeseboard").addClass("spin" );
   if (draggable.attr('id') == "halloumi_cheese")
   {
@@ -68,18 +103,8 @@ $("#red_leicester").click(function(){
   }
 }
 
-//makes cheese img draggable
-$( init );
- 
-function init() {
-  $('#halloumi_cheese').draggable();
-  $('#gorgonzola_cheese').draggable();
-  $('#swiss_cheese').draggable();
-  $('#camembert').draggable();
-  $('#red_leicester').draggable();
-  $('#cottage_cheese').draggable();
-}
 
+<<<<<<< HEAD
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
 });
@@ -148,6 +173,8 @@ $("#cottage_cheese").click(function(){
             });
 }); 
 >>>>>>> parent of fa3af55... drop cheese on top of board
+=======
+>>>>>>> origin/master
 
 //Make mea meal!
 $(function() {
@@ -272,11 +299,6 @@ $(".make_meal").click(function(){
 });
 $(".tell_me_more").click(function(){
     $(".progress-bar").css("width", "100%");
-});
-
-//hide twitter feed
-$(function() {
-  $("#twitterfeed").hide();
 });
 
 //show twitter feed when hover over twitter-btn. Looking to change this to first click show, second click hide. F
