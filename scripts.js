@@ -17,51 +17,18 @@ $(function() {
 	$('.cheese_recipe').hide()
 });
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 //hide twitter feed
 $(function() {
   $("#twitterfeed").hide();
 });
 
 //makes cheese img draggable
-function init() {
-  $('#halloumi_cheese').draggable();
-  $('#gorgonzola_cheese').draggable();
-  $('#swiss_cheese').draggable();
-  $('#camembert').draggable();
-  $('#red_leicester').draggable();
-  $('#cottage_cheese').draggable();
-  $('#cheeseboard').droppable( {
-        } );
-    }  
-
-
+$( init );
  
-function cheeseonboard( event, ui ) {
-  var draggable = ui.draggable;
-  $("#cheeseboard").addClass("spin" );
-  if (draggable.attr('id') == "halloumi_cheese")
-  {
-    $(".halloumi_recipe" ).addClass("selected" );
-  }
-  if (draggable.attr('id') == "gorgonzola_cheese")
-  {
-    $(".gorgonzola_recipe" ).addClass("selected" );
-  }
-  if (draggable.attr('id') == "swiss_cheese")
-  {
-    $(".swiss_cheese_recipe" ).addClass("selected" );
-  }
-  if (draggable.attr('id') == "camembert")
-  {
-    $(".camembert_recipe" ).addClass("selected" );
-  }
-  if (draggable.attr('id') == "red_leicester")
-  {
-    $(".red_leicester_recipe" ).addClass("selected" );
-  }
-}
-
-//progress bar
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
 });
@@ -72,8 +39,143 @@ $(".tell_me_more").click(function(){
     $(".progress-bar").css("width", "100%");
 });
 
+function init() {
+  $('#halloumi_cheese').draggable();
+  $('#gorgonzola_cheese').draggable();
+  $('#swiss_cheese').draggable();
+  $('#camembert').draggable();
+  $('#red_leicester').draggable();
+  $('#cottage_cheese').draggable();
+  $('#cheeseboard').droppable( {
+   drop: cheeseonboard
+        } );
+    }  
 
-//make button
+
+>>>>>>> origin/master
+function cheeseonboard( event, ui ) {
+  var draggable = ui.draggable;
+  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+  $("#cheeseboard").addClass("spin" );
+  if (draggable.attr('id') == "halloumi_cheese")
+  {
+    $(".halloumi_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "gorgonzola_cheese")
+  {
+=======
+//select the recipes corresponding to selected cheeses by adding "selected" calss
+//also add the border properties to stay
+$(function() {
+$("#halloumi_cheese").click(function(){
+    $(".halloumi_recipe" ).addClass("selected");
+    $("#halloumi_cheese").css({"border-color":"#ffd500"});
+    $("#halloumi_cheese").css({"border-width":"2px"});
+            });
+});
+$(function() {
+$("#gorgonzola_cheese").click(function(){
+>>>>>>> parent of fa3af55... drop cheese on top of board
+    $(".gorgonzola_recipe" ).addClass("selected" );
+    $("#gorgonzola_cheese").css({"border-color":"#ffd500"});
+    $("#gorgonzola_cheese").css({"border-width":"2px"});
+    // $(".progress-bar").css("width: 30%")
+            });
+}); 
+$(function() {
+$("#swiss_cheese").click(function(){
+    $(".swiss_cheese_recipe" ).addClass("selected" );
+    $("#swiss_cheese").css({"border-color":"#ffd500"});
+    $("#swiss_cheese").css({"border-width":"2px"});
+            });
+}); 
+$(function() {
+$("#camembert").click(function(){
+    $(".camembert_recipe" ).addClass("selected" );
+    $("#camembert").css({"border-color":"#ffd500"});
+    $("#camembert").css({"border-width":"2px"});
+            });
+}); 
+$(function() {
+$("#red_leicester").click(function(){
+    $(".red_leicester_recipe" ).addClass("selected" );
+<<<<<<< HEAD
+  }
+}
+
+
+<<<<<<< HEAD
+$(".cheese_image").click(function(){
+    $(".progress-bar").css("width", "33%");
+});
+$(".make_meal").click(function(){
+    $(".progress-bar").css("width", "66%");
+});
+$(".tell_me_more").click(function(){
+    $(".progress-bar").css("width", "100%");
+});
+=======
+//select the recipes corresponding to selected cheeses by adding "selected" calss
+//also add the border properties to stay
+// $(function() {
+// $("#halloumi_cheese").click(function(){
+//     $(".halloumi_recipe" ).addClass("selected");
+//     $("#halloumi_cheese").css({"border-color":"#ffd500"});
+//     $("#halloumi_cheese").css({"border-width":"2px"});
+//             });
+// });
+// $(function() {
+// $("#gorgonzola_cheese").click(function(){
+//     $(".gorgonzola_recipe" ).addClass("selected" );
+//     $("#gorgonzola_cheese").css({"border-color":"#ffd500"});
+//     $("#gorgonzola_cheese").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#swiss_cheese").click(function(){
+//     $(".swiss_cheese_recipe" ).addClass("selected" );
+//     $("#swiss_cheese").css({"border-color":"#ffd500"});
+//     $("#swiss_cheese").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#camembert").click(function(){
+//     $(".camembert_recipe" ).addClass("selected" );
+//     $("#camembert").css({"border-color":"#ffd500"});
+//     $("#camembert").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#red_leicester").click(function(){
+//     $(".red_leicester_recipe" ).addClass("selected" );
+//     $("#red_leicester").css({"border-color":"#ffd500"});
+//     $("#red_leicester").css({"border-width":"2px"});
+//             });
+// }); 
+// $(function() {
+// $("#cottage_cheese").click(function(){
+//     $(".cottage_cheese_recipe" ).addClass("selected" );
+//     $("#cottage_cheese").css({"border-color":"#ffd500"});
+//     $("#cottage_cheese").css({"border-width":"2px"});
+//             });
+// }); 
+>>>>>>> refs/remotes/origin/dag&drop
+=======
+    $("#red_leicester").css({"border-color":"#ffd500"});
+    $("#red_leicester").css({"border-width":"2px"});
+            });
+}); 
+$(function() {
+$("#cottage_cheese").click(function(){
+    $(".cottage_cheese_recipe" ).addClass("selected" );
+    $("#cottage_cheese").css({"border-color":"#ffd500"});
+    $("#cottage_cheese").css({"border-width":"2px"});
+            });
+}); 
+>>>>>>> parent of fa3af55... drop cheese on top of board
+=======
+>>>>>>> origin/master
+
 $(function() {
 $("#make_button").click(function(){
     if (document.querySelector('.selected') == null) {
@@ -86,6 +188,14 @@ $("#make_button").click(function(){
     }, 2000);
 });
   });
+
+//cheeseboard spins when mouse is on on the makemeal button area too.
+$(function() {
+$("#make_button").hover(function(){
+$("#cheeseboard").addClass("spin" );
+}); 
+}); 
+
 
 //reset button
 $(function() {
@@ -165,6 +275,19 @@ $(".no_gross").click(function(){
     $(".thumbnail").css({"border-color":"transparent"});
   });
 }); 
+<<<<<<< HEAD
+
+//makes cheese img draggable
+$( init );
+ 
+function init() {
+  $('#halloumi_cheese').draggable();
+  $('#gorgonzola_cheese').draggable();
+  $('#swiss_cheese').draggable();
+  $('#camembert').draggable();
+  $('#red_leicester').draggable();
+  $('#cottage_cheese').draggable();
+}
 
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
@@ -209,4 +332,44 @@ $(".about-btn").mouseleave(function() {
   }); 
 }); 
 
-
+=======
+//makes cheese img draggable
+$( init );
+ 
+function init() {
+  $('#halloumi_cheese').draggable();
+  $('#gorgonzola_cheese').draggable();
+  $('#swiss_cheese').draggable();
+  $('#camembert').draggable();
+  $('#red_leicester').draggable();
+  $('#cottage_cheese').draggable();
+  $('#cheeseboard').droppable( {
+    drop: cheeseonboard
+    // out: cheeseoffboard
+  } );
+}
+function cheeseonboard( event, ui ) {
+  var draggable = ui.draggable;
+  $("#cheeseboard").addClass("spin" );
+  if (draggable.attr('id') == "halloumi_cheese")
+  {
+    $(".halloumi_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "gorgonzola_cheese")
+  {
+    $(".gorgonzola_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "swiss_cheese")
+  {
+    $(".swiss_cheese_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "camembert")
+  {
+    $(".camembert_recipe" ).addClass("selected" );
+  }
+  if (draggable.attr('id') == "red_leicester")
+  {
+    $(".red_leicester_recipe" ).addClass("selected" );
+  }
+}
+>>>>>>> refs/remotes/origin/dag&drop
