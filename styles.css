@@ -28,7 +28,7 @@
 }
 #make_button {
     background-color: rgba(0, 0, 0, 0.5);
-    border-color: black;
+    border-color: grey;
     margin-top: 100px;
 }
 .progress {
@@ -64,7 +64,9 @@ h1 {
 h2 {
     margin:0 auto;
 }
-
+p{
+    color: black;
+}
 
 /* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
 I've probably missed something! Ruth*/
@@ -282,7 +284,7 @@ Can be changed later if needed. Still a work in progress! Ruth */
     height: 24em;
     padding: 2.8em;
     /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-    border: dashed 1px;
+    border: dashed 0;
     border-radius: 50%;
     margin: 1.75em auto 0;
 }
@@ -306,3 +308,10 @@ Can be changed later if needed. Still a work in progress! Ruth */
     color:white;
     border-color:white;
 }
+.navbar-fixed-bottom{
+    background-color: white;
+}
+@media (max-width: 900px){
+  h1{
+    font-size: 70px;
+  }
