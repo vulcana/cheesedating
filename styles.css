@@ -1,10 +1,10 @@
 .container-fluid {
-	padding: 0.5em;
+    padding: 0.5em;
 }
 
 
 .jumbotron {
-	padding: 1em;
+    padding: 1em;
 }
 
 
@@ -20,24 +20,24 @@
 }
 
 #main_title {
-	text-align: center;
+    text-align: center;
 }
 .make_meal {
-	margin: 0 auto;
-	text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 #make_button {
-  	background-color: rgba(0, 0, 0, 0.5);
-  	border-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: black;
     margin-top: 100px;
 }
 .progress {
-	width: 70%;
-	margin: 1em auto;
+    width: 70%;
+    margin: 1em auto;
 }
 .cheese_image {
-	border-radius: 1em;
-	width: 100%;
+    border-radius: 1em;
+    width: 100%;
 }
 a.thumbnail:hover,
 a.thumbnail:focus,
@@ -45,18 +45,17 @@ a.thumbnail.active {
   border: 2px solid;
   border-color: #ffd500;
 }
-
 .thumbnail{
     z-index: 2;
 }
 #instructions {
-	text-align: center;
+    text-align: center;
 }
 #reset {
-	margin-top: 100px;
+    margin-top: 100px;
 }
 h1 {
-	font-size: 20em;
+    font-size: 20em;
     font-family:'Londrina Shadow', cursive;
     color:black;
     margin:0 auto;
@@ -71,39 +70,39 @@ h2 {
 I've probably missed something! Ruth*/
 
 .cheese_recipe p {
-	text-align: center;
-	font-size: 1.5em;
-	color: rgba(255,255,255,1);
-	background: black;
-	background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-	background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-	padding: 10px;
-	line-height: 28px;
-	text-align: justify;
-	position: absolute;
-	bottom: 0;
-	margin: 0;
-	height:30px;
-	transition: height .5s;
-	-webkit-transition: height .5s;
-	-moz-transition: height .5s;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height:30px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
 }
 .cheese_recipe {
-	margin: 0 auto;
-	width: 70%;
-	background-size: cover;
+    margin: 0 auto;
+    width: 70%;
+    background-size: cover;
     border-radius: 10px;
     margin-bottom: 80px;
 }
 .cheese_name {
-	color: #ffd500;
+    color: #ffd500;
 }
 #make_button:hover {
-	box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
-	}
+    box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
+    }
 #make_button:active{
-	background-color: rgba(0,0,0,.7)
+    background-color: rgba(0,0,0,.7)
 }
 small {
  opacity: 0; 
@@ -134,21 +133,17 @@ small {
 }
 
 p {
-	text-align:center;
-	font-size: 1.5em;
+    text-align:center;
+    font-size: 1.5em;
 }
-
-#cheeseboard{
-	height: 300px;
-	border-radius: 200px;
-    margin: 20px;
-    border-radius: 100px;
-    position: relative;
+#cheeseboard {
+    /*height: 200px;*/
+    border-radius: 200px;
     z-index: 0;
 }
 
 .spin {
-	-webkit-animation-name: spin;
+    -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -166,8 +161,8 @@ p {
     animation-timing-function: linear;
 }
 .centered_buttons {
-	text-align: center;
-	margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .progress-bar {
     background-image: url("wood.jpg");
@@ -176,15 +171,15 @@ p {
     border-radius: 2px;
 }
 .navbar-fixed-bottom {
-	background-color: rgba(255, 255, 255, 0.4);
-	border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
     color:white;
 }
 .navbar-default {
-	background-color: rgba(255, 255, 255, 0);
-	border: none;
-	width: cover;
-	position:fixed;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: cover;
+    position:fixed;
 }
 
 .btn{
@@ -193,8 +188,8 @@ p {
 }
 
 #logo {
-	width: 15%;
-	margin-top: -25px;
+    width: 15%;
+    margin-top: -25px;
 }
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
