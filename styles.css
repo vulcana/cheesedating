@@ -27,10 +27,9 @@
 	text-align: center;
 }
 #make_button {
-	position: relative;
-  	left: -106px;
   	background-color: rgba(0, 0, 0, 0.5);
   	border-color: black;
+    margin: 20px;
 }
 .progress {
 	width: 70%;
@@ -46,8 +45,13 @@ a.thumbnail.active {
   border: 2px solid;
   border-color: #ffd500;
 }
+<<<<<<< HEAD
 .thumbnail{
     z-index: 2;
+=======
+.thumbnail {
+    z-index: +2;
+>>>>>>> refs/remotes/origin/dag&drop
 }
 #instructions {
 	text-align: center;
@@ -138,6 +142,7 @@ p {
 	font-size: 1.5em;
 }
 #cheeseboard {
+<<<<<<< HEAD
 	/*height: 200px;*/
     border-radius: 200px;
     z-index: 0;
@@ -160,7 +165,13 @@ p {
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+=======
+	height: 300px;
+	border-radius: 200px;
+    margin: 20px;
+>>>>>>> refs/remotes/origin/dag&drop
 }
+
 .spin {
 	-webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
