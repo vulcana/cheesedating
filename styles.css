@@ -46,6 +46,7 @@ a.thumbnail.active {
   border-color: #ffd500;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .thumbnail{
     z-index: 2;
 =======
@@ -53,6 +54,8 @@ a.thumbnail.active {
     z-index: +2;
 >>>>>>> refs/remotes/origin/dag&drop
 }
+=======
+>>>>>>> parent of fa3af55... drop cheese on top of board
 #instructions {
 	text-align: center;
 }
@@ -145,7 +148,8 @@ p {
 <<<<<<< HEAD
 	/*height: 200px;*/
     border-radius: 200px;
-    z-index: 0;
+	/*position: relative;
+  	right: -85px;*/
 }
 #cheeseboard:hover {
     -webkit-animation-name: spin;
