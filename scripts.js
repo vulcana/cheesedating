@@ -1,3 +1,4 @@
+
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -36,7 +37,11 @@ $(".tell_me_more").click(function(){
 });
 
 function init() {
-  $('#halloumi_cheese').draggable();
+  $('#halloumi_cheese').draggable(
+  {
+  cursorAt: { left: 190 }
+}
+);
   $('#gorgonzola_cheese').draggable();
   $('#swiss_cheese').draggable();
   $('#camembert').draggable();
