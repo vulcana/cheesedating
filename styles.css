@@ -100,7 +100,7 @@ I've probably missed something! Ruth*/
     margin-bottom: 80px;
 }
 .cheese_name {
-    color: #ffd500;
+    font-weight: bold;
 }
 #make_button:hover {
     box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
@@ -124,13 +124,15 @@ small {
   background-image: url("gorgonzola_recipe.jpg");
 }
 .swiss_cheese_recipe {
-  background-image: url("swiss_cheese_recipe.jpg");
+  background: url("swiss_cheese_recipe.jpg") 3em center;
+  background-size: cover;
 }
 .camembert_recipe{
   background-image: url("camembert_recipe.jpg");
 }
 .red_leicester_recipe {
   background-image: url("red_leicester_recipe.jpg");
+  background-position: 0px 10px;
 }
 .cottage_cheese_recipe {
   background-image: url("#");

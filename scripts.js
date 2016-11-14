@@ -176,7 +176,7 @@ $(".camembert_buttons.tell_me_more").click(function(){
 
 $(function() {
 $(".red_leicester_buttons.tell_me_more").click(function(){
-    $(".red_leciester_ingredients").show();
+    $(".red_leicester_ingredients").show();
     $(".red_leicester_method").show();
   });
 }); 
