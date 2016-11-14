@@ -43,14 +43,6 @@
     width: 10em !important;
 }
 
-/*a.cheese:hover,
-a.cheese:focus,
-a.cheese.active {
-  border: 2px solid;
-  border-color: #ffd500;
-}*/
-
-
 #instructions {
     text-align: center;
 }
@@ -353,19 +345,24 @@ p {
 
 /* CSS to make name of cheese appear on hover */
 
+.cheese {
+    position: relative;
+    float: left;
+}
+
 span.text-content {
 	background: none;
-	color: #ffd500;
-	font-size: auto;
+	color: black;
+	font-size: 20px;
 	font-style: bold;
 	font-family:Londrina Shadow;
 	cursor: pointer;
-	display: table;
-	height: 10em;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 10em;
+    position:absolute;
+    margin-left: 11px;
+    top: calc(50% - 20px);
+    left: 0;
+    text-align: center;
+    width: 100%;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
@@ -379,8 +376,15 @@ span.text-content span {
 	vertical-align: middle;
 }
 
-ul.circle-container li:hover span.text-content {
+a.cheese:hover span.text-content {
     opacity: 1;
+}
+
+a.cheese:hover,
+a.cheese:focus,
+a.cheese.active {
+    border: 2px solid;
+    border-color: #ffd500;
     background: rgba(0,0,0,0.3);
 }
 
