@@ -1,7 +1,8 @@
 <DOCTYPE! html>
 <html>
-	<head>
+	
 
+	<head>
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet"/> 
@@ -11,9 +12,16 @@
 		<link rel="stylesheet" href="jquery-ui.min.css">
         <script src="jquery-ui.min.js"></script>
 	</head>
+	
+
 	<body>
+
+		<!-- jumbotron container and page background -->
 		<div class= "container-fluid">
 			<div class="jumbotron page_background" id="background_drop">
+
+
+				<!-- top navbar (including logo, about and #cheese) -->
 				<nav class="navbar navbar-default">
 	  				<div class="container-fluid">
 	    				<div class="navbar-header">
@@ -21,12 +29,26 @@
 							<button class="btn navbar-btn about-btn">About</button> 
 							<button class="btn navbar-btn twitter-btn">#Cheese</button>
 	      				</div>
+	      				<!-- about and twitter feed part of navbar -->
+	      				<div class="col-md-3">
+							<div id=twitterfeed>
+							     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
+							</div>
+							<div id="about_text">
+							<p> About text here </p>	
+							</div>	
+						</div>	
 	  				</div>
 				</nav>
+
+
+				<!-- main body of the page -->
 				<div class= "jumbotron cheese_bit">
 					<span id= "main_title" class="col-xs-12"><h1>Cheese Dating</h1></span>
-					<span id= "instructions"><h2>Select your cheese(s)</h2></span>
-					<!-- new -->
+					<span id= "instructions"><h2>Drag your cheese(s) onto the cheeseboard</h2></span>
+
+
+				<!-- cheeses and cheeseboard -->
 					<div class="row">
 					   <div class="col-md-4"></div>
 					   <div class="col-md-2">
@@ -138,22 +160,19 @@
 										<span class='cheeseboard'><img src="cheeseboard_vec.png" id="cheeseboard" class="center"></span>
 									</li>
 								</ul>
-								<div class='row'>
-									<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
-									<button class="btn" id="reset">Reset</button>
-								</div>
 							</div>
-							<div class="col-md-3">
-								<div id=twitterfeed>
-								     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
-								</div>
-								<div id="about_text">
-								<p> About text here </p>	
-								</div>	
-							</div>	
+							<div class='row'>
+								<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
+								<button class="btn" id="reset">Reset</button>
+							</div>
+
+
 						</div><!--container-->
-					<!-- </div> --> 
-				</div><!--jumbotron-->
+					</div> <!--row-->	
+				</div><!--jumbotron_cheese_bit-->
+
+
+				<!-- halloumi recipe -->
 				<div class="container halloumi_recipe cheese_recipe">
 					<h1>Quinoa with Halloumi</h1>
 					<div class="centered_buttons">
@@ -189,6 +208,9 @@
 						</div>
 					</div>
 				</div>
+
+
+				<!-- gorgonzola recipe -->
 				<div class="container gorgonzola_recipe cheese_recipe">
 					<h1>Bacon, Spinach and Gorgonzola pasta</h1>
 					<div class="centered_buttons">
@@ -222,15 +244,44 @@
 						</div>
 					</div>
 				</div>
+
+
+				<!-- URL of swiss cheese recipe: http://www.bbcgoodfood.com/recipes/3459/swiss-cheese-schnitzel -->
 				<div class="container swiss_cheese_recipe cheese_recipe">
-					<h1>Swiss Cheese Recipe</h1>
+					<h1>Swiss Cheese Schnitzel</h1>
 					<div class="centered_buttons">
 						<div class="btn-group" role="group">
 		 					<button type="button" class="btn btn-success swiss_cheese_buttons tell_me_more">Tell me more</button>
 		  					<button type="button" class="btn btn-danger swiss_cheese_buttons no_gross">No, gross</button>
 						</div>
 					</div>
+					<div class='row'>
+						<div class='col-md-offset-1 col-sm-4 ingredients swiss_cheese_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>4 slices white bread (about 100g/4oz)</li>
+								<li>¼tsp baking powder</li>
+								<li>½tsp dry English mustard powder</li>
+								<li>Pinch of freshly ground white pepper</li>
+								<li>25g (1oz) butter cut into small cubes, plus extra to serve</li>
+								<li>50g <span class="cheese_name">Gruyère or Emmenthal</span></li>
+								<li>4 x 175g/6oz pork steak, trimmed of fat</li>
+								<li>1 egg, beaten</li>
+								<li>2 tbsp olive oil</li>
+							</ul>
+						</div>
+						<div class="col-sm-5 col-md-offset-1 method swiss_cheese_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Whizz the bread in a food processor until fine. Mix breadcrumbs and cheese together, tip onto a large plate, then season. Dip the pork in the egg, then press both sides into the breadcrumb mixture to coat all over.</li>
+								<li>Heat the oil in a large non-stick frying pan and fry the steaks for 3-4 mins on each side until cooked through. Serve with a crisp salad or try the Swiss-style salad, below.</li>
+							</ol>
+						</div>
+					</div>
 				</div>
+
+
+				<!-- camembert recipe -->
 				<div class="container camembert_recipe cheese_recipe">
 					<h1>Baked Camembert</h1>
 					<div class="centered_buttons">
@@ -261,6 +312,7 @@
 				</div>
 
 
+				<!-- URL of red leicester recipe: http://www.dailymail.co.uk/femail/food/article-1328823/Recipe-Red-Leicester-cheese-scones-plum-onion-compote.html -->
 				<div class="container red_leicester_recipe cheese_recipe">
 					<h1>Red Leicester Scones with Plum &amp; Onion Compote</h1>
 					<div class="centered_buttons">
@@ -276,7 +328,7 @@
 							<h2>Ingredients</h2>
 							<h3>For the scones</h3>
 							<ul>
-								<li>175g (9¾oz) self-raising flour </li>
+								<li>175g (9¾oz) self-raising flour</li>
 								<li>¼tsp baking powder</li>
 								<li>½tsp dry English mustard powder</li>
 								<li>Pinch of freshly ground white pepper</li>
@@ -314,6 +366,7 @@
 				</div>
 
 
+				<!-- cottage cheese recipe -->
 				<div class="container cottage_cheese_recipe cheese_recipe">
 					<h1>Cottage Cheese Recipe</h1>
 					<div class="centered_buttons">
@@ -325,6 +378,7 @@
 				</div>
 
 
+				<!-- bottom progress bar -->
 				<div class="container">
 					<nav class="navbar navbar-default navbar-fixed-bottom">
 						<p>How close am I to dinner?</p>

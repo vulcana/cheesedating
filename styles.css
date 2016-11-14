@@ -15,6 +15,7 @@
     background-image: url("background5.jpg");
     background-size: cover; 
     margin:0 auto;
+    width: 100%;
 }
 
 #main_title {
@@ -34,10 +35,9 @@
     width: 70%;
     margin: 1em auto;
 }
-/*.cheese_image {
-    border-radius: 1em;
-    width: 100%;
-}*/
+.cheese_image {
+    width: 10em !important;
+}
 
 /*a.cheese:hover,
 a.cheese:focus,
@@ -135,7 +135,7 @@ small {
   background-position: 0px 10px;
 }
 .cottage_cheese_recipe {
-  background-image: url("#");
+  background-image: url("cottage_cheese_recipe.jpg");
 }
 
 p {
@@ -143,7 +143,8 @@ p {
     font-size: 1.5em;
 }
 #cheeseboard {
-    height: 200px;
+    height: 320px;
+    width: auto;
     border-radius: 200px;
     z-index: 0;
 }
@@ -194,7 +195,7 @@ p {
 }
 
 #logo {
-    width: 15%;
+    width: 25%;
     margin-top: -25px;
 }
 @-ms-keyframes spin {
@@ -283,11 +284,11 @@ p {
 
 /*.circle-container {
     position: relative;
-    width: 35em;
-    height: 35em;
+    width: 30em;
+    height: 30em;
     padding: 2.8em;
     border: none;
-    margin: 150px auto 200px;
+    margin: 110px auto 100px;
     list-style-type:none;
     text-align: center;
 }
@@ -296,7 +297,7 @@ p {
     display: block;
     position: absolute;
     top: 50%; left: 50%;
-    width: 15em; height: 15em;
+    width: 10em; height: 10em;
     margin: -6.5em;
 }
 
@@ -304,8 +305,8 @@ p {
     display: block;
     position: absolute;
     top: 25%; left: 25%;
-    width: 30em; height: 30em;
-    margin: -6em;
+    width: 25em; height: 25em;
+    margin: -6.5em;
 }
 
 .circle-container img { display: block; width: 100%; }
@@ -326,11 +327,11 @@ span.text-content {
 	font-family:Londrina Shadow;
 	cursor: pointer;
 	display: table;
-	height: 15em;
+	height: 10em;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 15em;
+	width: 10em;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
@@ -360,7 +361,11 @@ span.text-content span {
 
 /*this is where we make website responsive*/
 @media (max-width: 900px){
-  h1{
-    font-size: 70px;
-  }
+    #main_title {
+        font-size: 5px;
+    }
+    .cheese_image {
+        width: 0.2em;
+        height: inherit;
+    }
 }
