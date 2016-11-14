@@ -143,7 +143,7 @@ p {
     font-size: 1.5em;
 }
 #cheeseboard {
-    /*height: 200px;*/
+    height: 200px;
     border-radius: 200px;
     z-index: 0;
 }
@@ -281,7 +281,7 @@ p {
   content: counter(item) ".";
 }
 
-.circle-container {
+/*.circle-container {
     position: relative;
     width: 35em;
     height: 35em;
@@ -315,7 +315,7 @@ p {
 .deg180 { transform: translate(-27em); }
 .deg225 { transform: rotate(225deg) translate(27em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(27em) rotate(-315deg); }
-
+*/
 /* CSS to make name of cheese appear on hover */
 
 span.text-content {
@@ -344,10 +344,10 @@ span.text-content span {
 	vertical-align: middle;
 }
 
-ul.circle-container li:hover span.text-content {
+/*ul.circle-container li:hover span.text-content {
     opacity: 1;
     background: rgba(0,0,0,0.3);
-}
+}*/
 
 #about_text{
     background-image:url("wood.jpg");

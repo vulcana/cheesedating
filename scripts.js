@@ -38,9 +38,7 @@ $(".tell_me_more").click(function(){
 
 function init() {
   $('#halloumi_cheese').draggable(
-  {
-  cursorAt: { left: 190 }
-}
+  
 );
   $('#gorgonzola_cheese').draggable();
   $('#swiss_cheese').draggable();
