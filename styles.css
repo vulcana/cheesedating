@@ -140,13 +140,9 @@ p {
     font-size: 1.5em;
 }
 #cheeseboard {
-    height: 200px;
+    /*height: 200px;*/
     border-radius: 200px;
     z-index: 0;
- /*position: center;*/
-    /*transform: translate(30px);*/
-    
-
 }
 
 .spin {
