@@ -2,11 +2,9 @@
     padding: 0.5em;
 }
 
-
 .jumbotron {
     padding: 1em;
 }
-
 
 .cheese_bit{
     background: rgba(0, 0, 0, 0);
@@ -39,7 +37,7 @@
     border-radius: 1em;
     width: 100%;
 }
-a.thumbnail:hover,
+/*a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
   border: 2px solid;
@@ -47,7 +45,8 @@ a.thumbnail.active {
 }
 .thumbnail{
     z-index: 2;
-}
+}*/
+
 #instructions {
     text-align: center;
 }
@@ -280,28 +279,29 @@ Can be changed later if needed. Still a work in progress! Ruth */
 
 .circle-container {
     position: relative;
-    width: 24em;
-    height: 24em;
+    width: 35em;
+    height: 35em;
     padding: 2.8em;
     /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-    border: dashed 0;
-    border-radius: 50%;
-    margin: 1.75em auto 0;
+    border: none;
+    margin: 150px auto 200px;
 }
+
 .circle-container a {
     display: block;
     position: absolute;
     top: 50%; left: 50%;
-    width: 4em; height: 4em;
-    margin: -2em;
+    width: 15em; height: 15em;
+    margin: -7.5em;
 }
+
 .circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
-.deg180 { transform: translate(-12em); }
-.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+.deg0 { transform: translate(27em); }
+.deg45 { transform: rotate(45deg) translate(27em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(27em) rotate(-135deg); }
+.deg180 { transform: translate(-27em); }
+.deg225 { transform: rotate(225deg) translate(27em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(27em) rotate(-315deg); }
 
 #about_text{
     background-image:url("wood.jpg");
