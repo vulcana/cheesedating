@@ -44,16 +44,10 @@ a.cheese.active {
   border: 2px solid;
   border-color: #ffd500;
 }
+
 .cheese{
     z-index: 2;
 }
-
-/*.cheese_text p {
-    font-color: white;
-    text-align: center;
-    vertical-align: middle;
-    opacity: 0%;
-}*/
 
 #instructions {
     text-align: center;
@@ -292,6 +286,8 @@ Can be changed later if needed. Still a work in progress! Ruth */
     padding: 2.8em;
     border: none;
     margin: 150px auto 200px;
+    list-style-type:none;
+    text-align: center;
 }
 
 .circle-container a {
@@ -302,6 +298,14 @@ Can be changed later if needed. Still a work in progress! Ruth */
     margin: -6.5em;
 }
 
+.circle-container span.cheeseboard {
+    display: block;
+    position: absolute;
+    top: 25%; left: 25%;
+    width: 30em; height: 30em;
+    margin: -6em;
+}
+
 .circle-container img { display: block; width: 100%; }
 .deg0 { transform: translate(27em); }
 .deg45 { transform: rotate(45deg) translate(27em) rotate(-45deg); }
@@ -309,6 +313,38 @@ Can be changed later if needed. Still a work in progress! Ruth */
 .deg180 { transform: translate(-27em); }
 .deg225 { transform: rotate(225deg) translate(27em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(27em) rotate(-315deg); }
+
+/* CSS to make name of cheese appear on hover */
+
+span.text-content {
+  background: none;
+  color: black;
+  font-size: auto;
+  font-style: bold;
+  cursor: pointer;
+  display: table;
+  height: 15em;*/
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15em;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.circle-container li:hover span.text-content {
+    opacity: 1;
+    background: rgba(0,0,0,0.3);
+}
 
 #about_text{
     background-image:url("wood.jpg");
