@@ -26,6 +26,8 @@
 .make_meal {
     margin: 0 auto;
     text-align: center;
+    font-family: Londrina Shadow;
+    font-size: 2em;
 }
 
 #make_button {
@@ -187,10 +189,10 @@ p {
 .navbar-default p {
     color: #ffd500;
     font-family: Londrina Shadow;
-    font-size: 2em;
+    font-size: 3em;
 }
 
-.btn{
+.btn-success, .btn-danger{
     background-image: url("wood.jpg");
     color: white;
     border-width: 0;
@@ -202,7 +204,11 @@ p {
 }
 
 .twitter_navbar {
-    position:relative;
+    position: relative;
+}
+
+.twitter-btn {
+    width: 22%;
 }
 
 
@@ -376,12 +382,6 @@ span.text-content span {
 ul.circle-container li:hover span.text-content {
     opacity: 1;
     background: rgba(0,0,0,0.3);
-}
-
-#about_text{
-    background-image:url("wood.jpg");
-    color:white;
-    border-color:white;
 }
 
 
