@@ -34,17 +34,17 @@
     width: 70%;
     margin: 1em auto;
 }
-.cheese_image {
+/*.cheese_image {
     border-radius: 1em;
     width: 100%;
-}
+}*/
 
-a.cheese:hover,
+/*a.cheese:hover,
 a.cheese:focus,
 a.cheese.active {
   border: 2px solid;
   border-color: #ffd500;
-}
+}*/
 
 .cheese{
     z-index: 2;
