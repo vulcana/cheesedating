@@ -1,7 +1,8 @@
 <DOCTYPE! html>
 <html>
-	<head>
+	
 
+	<head>
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet"/> 
@@ -11,9 +12,16 @@
 		<link rel="stylesheet" href="jquery-ui.min.css">
         <script src="jquery-ui.min.js"></script>
 	</head>
+	
+
 	<body>
+
+		<!-- jumbotron container and page background -->
 		<div class= "container-fluid">
 			<div class="jumbotron page_background" id="background_drop">
+
+
+				<!-- top navbar (including logo, about and #cheese) -->
 				<nav class="navbar navbar-default">
 	  				<div class="container-fluid">
 	    				<div class="navbar-header">
@@ -21,11 +29,26 @@
 							<button class="btn navbar-btn about-btn">About</button> 
 							<button class="btn navbar-btn twitter-btn">#Cheese</button>
 	      				</div>
+	      				<!-- about and twitter feed part of navbar -->
+	      				<div class="col-md-3">
+							<div id=twitterfeed>
+							     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
+							</div>
+							<div id="about_text">
+							<p> About text here </p>	
+							</div>	
+						</div>	
 	  				</div>
 				</nav>
+
+
+				<!-- main body of the page -->
 				<div class= "jumbotron cheese_bit">
 					<span id= "main_title" class="col-xs-12"><h1>Cheese Dating</h1></span>
 					<span id= "instructions"><h2>Drag your cheese(s) onto the cheeseboard</h2></span>
+
+
+				<!-- cheeses and cheeseboard -->
 					<div class="row">
 						<div class="container-fluid">
 							<div class="col-md-6 col-md-offset-3">
@@ -75,17 +98,14 @@
 								<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
 								<button class="btn" id="reset">Reset</button>
 							</div>
-							<div class="col-md-3">
-								<div id=twitterfeed>
-								     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
-								</div>
-								<div id="about_text">
-								<p> About text here </p>	
-								</div>	
-							</div>	
+
+
 						</div><!--container-->
 					</div> <!--row-->	
-				</div><!--jumbotron-->
+				</div><!--jumbotron_cheese_bit-->
+
+
+				<!-- halloumi recipe -->
 				<div class="container halloumi_recipe cheese_recipe">
 					<h1>Quinoa with Halloumi</h1>
 					<div class="centered_buttons">
@@ -121,6 +141,9 @@
 						</div>
 					</div>
 				</div>
+
+
+				<!-- gorgonzola recipe -->
 				<div class="container gorgonzola_recipe cheese_recipe">
 					<h1>Bacon, Spinach and Gorgonzola pasta</h1>
 					<div class="centered_buttons">
@@ -191,6 +214,7 @@
 				</div>
 
 
+				<!-- camembert recipe -->
 				<div class="container camembert_recipe cheese_recipe">
 					<h1>Baked Camembert</h1>
 					<div class="centered_buttons">
@@ -275,6 +299,7 @@
 				</div>
 
 
+				<!-- cottage cheese recipe -->
 				<div class="container cottage_cheese_recipe cheese_recipe">
 					<h1>Cottage Cheese Recipe</h1>
 					<div class="centered_buttons">
@@ -286,6 +311,7 @@
 				</div>
 
 
+				<!-- bottom progress bar -->
 				<div class="container">
 					<nav class="navbar navbar-default navbar-fixed-bottom">
 						<p>How close am I to dinner?</p>
