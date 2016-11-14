@@ -15,6 +15,7 @@
     background-image: url("background5.jpg");
     background-size: cover; 
     margin:0 auto;
+    width: 100%;
 }
 
 #main_title {
@@ -34,10 +35,9 @@
     width: 70%;
     margin: 1em auto;
 }
-/*.cheese_image {
-    border-radius: 1em;
-    width: 100%;
-}*/
+.cheese_image {
+    width: 10em !important;
+}
 
 /*a.cheese:hover,
 a.cheese:focus,
@@ -143,7 +143,8 @@ p {
     font-size: 1.5em;
 }
 #cheeseboard {
-    /*height: 200px;*/
+    height: 320px;
+    width: auto;
     border-radius: 200px;
     z-index: 0;
 }
@@ -194,7 +195,7 @@ p {
 }
 
 #logo {
-    width: 15%;
+    width: 25%;
     margin-top: -25px;
 }
 @-ms-keyframes spin {
@@ -360,7 +361,11 @@ ul.circle-container li:hover span.text-content {
 
 /*this is where we make website responsive*/
 @media (max-width: 900px){
-  h1{
-    font-size: 70px;
-  }
+    #main_title {
+        font-size: 5px;
+    }
+    .cheese_image {
+        width: 0.2em;
+        height: inherit;
+    }
 }
