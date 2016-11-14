@@ -50,6 +50,9 @@ function init() {
   $('#cheeseboard').droppable( {
    drop: cheeseonboard
         } );
+  $('#background_drop').droppable( {
+   drop: cheeseoffboard
+        } );
     }  
 
 
@@ -78,7 +81,30 @@ function cheeseonboard( event, ui ) {
   }
 }
 
-
+function cheeseoffboard( event, ui ) {
+  var draggable = ui.draggable;
+  alert( 'The square with ID ' + draggable.attr('id') + 'was dropped off the board!' );
+  if (draggable.attr('id') == "halloumi_cheese")
+  {
+    $(".halloumi_recipe" ).removeClass("selected" );
+  }
+  if (draggable.attr('id') == "gorgonzola_cheese")
+  {
+    $(".gorgonzola_recipe" ).removeClass("selected" );
+  }
+  if (draggable.attr('id') == "swiss_cheese")
+  {
+    $(".swiss_cheese_recipe" ).removeClass("selected" );
+  }
+  if (draggable.attr('id') == "camembert")
+  {
+    $(".camembert_recipe" ).removeClass("selected" );
+  }
+  if (draggable.attr('id') == "red_leicester")
+  {
+    $(".red_leicester_recipe" ).removeClass("selected" );
+  }
+}
 
 $(function() {
 $("#make_button").click(function(){
