@@ -37,6 +37,7 @@
 }
 .cheese_image {
     width: 10em !important;
+    z-index: 2;
 }
 
 /*a.cheese:hover,
@@ -46,9 +47,6 @@ a.cheese.active {
   border-color: #ffd500;
 }*/
 
-.cheese{
-    z-index: 2;
-}
 
 #instructions {
     text-align: center;
@@ -151,7 +149,7 @@ p {
     height: 320px;
     width: auto;
     border-radius: 200px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .spin {
@@ -205,7 +203,7 @@ p {
 }
 
 #twitterfeed {
-    z-index: -1; 
+    z-index: 3; 
     position:relative;
 }
 @-ms-keyframes spin {
