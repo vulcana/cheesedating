@@ -29,9 +29,7 @@
 }
 
 #make_button {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: grey;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .progress {
@@ -68,6 +66,7 @@ h1 {
 
 h2 {
     margin:0 auto;
+    padding-bottom: 20px;
 }
 
 
