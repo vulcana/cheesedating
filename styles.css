@@ -120,7 +120,7 @@ small {
   background-image: url("halloumi_recipe2.jpg");
 }
 .gorgonzola_recipe {
-  background-image: url("#");
+  background-image: url("gorgonzola_recipe.jpg");
 }
 .swiss_cheese_recipe {
   background-image: url("#");
@@ -216,8 +216,7 @@ p {
 }
 
 
-/* I've added some trial css for the recipe boxes. 
-Can be changed later if needed. Still a work in progress! Ruth */
+/* CSS for the recipe boxes */
 
 .cheese_recipe h1 {
     padding-bottom: 20px;
