@@ -203,16 +203,9 @@ $(".no_gross").click(function(){
 //hide twitter feed by default, and toggle on click
 $("#twitterfeed").hide();
 
-$('#twitter-btn').toggle(
-   function () {
-      $('#twitterfeed').show("slide", {
+$('.twitter-btn').click(function () {
+    $('#twitterfeed').toggle("slide", {
           direction: "right"
       }, 1000);
-    },
-   function () {
-      $('#twitterfeed').hide("slide", {
-          direction: "right"
-      }, 1000);
-    },
 });
 
