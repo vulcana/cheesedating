@@ -37,7 +37,7 @@
 }
 .cheese_image {
     width: 10em !important;
-    z-index: 2;
+    z-index: 2 !important;
 }
 
 /*a.cheese:hover,
@@ -149,7 +149,7 @@ p {
     height: 320px;
     width: auto;
     border-radius: 200px;
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 .spin {
@@ -203,7 +203,7 @@ p {
 }
 
 #twitterfeed {
-    z-index: 3; 
+    z-index: 3 !important; 
     position:relative;
 }
 @-ms-keyframes spin {
