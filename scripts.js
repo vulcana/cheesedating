@@ -55,7 +55,6 @@ function init() {
 
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
-  alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
   $("#cheeseboard").addClass("spin" );
   if (draggable.attr('id') == "halloumi_cheese")
   {

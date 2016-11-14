@@ -19,6 +19,7 @@
 
 #main_title {
     text-align: center;
+    color:#ffd500;
 }
 .make_meal {
     margin: 0 auto;
@@ -316,28 +317,29 @@ p {
 /* CSS to make name of cheese appear on hover */
 
 span.text-content {
-  background: none;
-  color: black;
-  font-size: auto;
-  font-style: bold;
-  cursor: pointer;
-  display: table;
-  height: 15em;*/
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 15em;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
+	background: none;
+	color: #ffd500;
+	font-size: auto;
+	font-style: bold;
+	font-family:Londrina Shadow;
+	cursor: pointer;
+	display: table;
+	height: 15em;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 15em;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
 }
 
 span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
 
 ul.circle-container li:hover span.text-content {
@@ -353,9 +355,10 @@ ul.circle-container li:hover span.text-content {
 .navbar-fixed-bottom{
     background-color: white;
 }
+
+/*this is where we make website responsive*/
 @media (max-width: 900px){
   h1{
     font-size: 70px;
   }
-
- 
+}
