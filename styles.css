@@ -48,6 +48,13 @@ a.cheese.active {
     z-index: 2;
 }
 
+/*.cheese_text p {
+    font-color: white;
+    text-align: center;
+    vertical-align: middle;
+    opacity: 0%;
+}*/
+
 #instructions {
     text-align: center;
 }
@@ -283,7 +290,6 @@ Can be changed later if needed. Still a work in progress! Ruth */
     width: 35em;
     height: 35em;
     padding: 2.8em;
-    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
     border: none;
     margin: 150px auto 200px;
 }
@@ -293,7 +299,7 @@ Can be changed later if needed. Still a work in progress! Ruth */
     position: absolute;
     top: 50%; left: 50%;
     width: 15em; height: 15em;
-    margin: -7.5em;
+    margin: -6.5em;
 }
 
 .circle-container img { display: block; width: 100%; }
@@ -316,4 +322,5 @@ Can be changed later if needed. Still a work in progress! Ruth */
   h1{
     font-size: 70px;
   }
+
  
