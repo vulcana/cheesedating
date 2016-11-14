@@ -22,22 +22,25 @@
     text-align: center;
     color:#ffd500;
 }
+
 .make_meal {
     margin: 0 auto;
     text-align: center;
 }
+
 #make_button {
     background-color: rgba(0, 0, 0, 0.5);
     border-color: grey;
     margin-top: 100px;
 }
+
 .progress {
     width: 70%;
     margin: 1em auto;
 }
+
 .cheese_image {
     width: 10em !important;
-    z-index: 2 !important;
 }
 
 /*a.cheese:hover,
@@ -51,9 +54,11 @@ a.cheese.active {
 #instructions {
     text-align: center;
 }
+
 #reset {
     margin-top: 100px;
 }
+
 h1 {
     font-size: 20em;
     font-family:'Londrina Shadow', cursive;
@@ -64,12 +69,7 @@ h1 {
 h2 {
     margin:0 auto;
 }
-p{
-    color: black;
-}
 
-/* Do we have a p in cheese recipe? Can't see one in the html so not sure what this bit of css is doing.
-I've probably missed something! Ruth*/
 
 .cheese_recipe p {
     text-align: center;
@@ -90,6 +90,7 @@ I've probably missed something! Ruth*/
     -webkit-transition: height .5s;
     -moz-transition: height .5s;
 }
+
 .cheese_recipe {
     margin: 0 auto;
     width: 70%;
@@ -97,21 +98,27 @@ I've probably missed something! Ruth*/
     border-radius: 10px;
     margin-bottom: 80px;
 }
+
 .cheese_name {
     font-weight: bold;
 }
+
 #make_button:hover {
     box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
-    }
+}
+
 #make_button:active{
     background-color: rgba(0,0,0,.7)
 }
+
 small {
  opacity: 0; 
 }
+
 .show-description p {
  height: 150px; 
 }
+
 .show-description small {
  opacity:1; 
 }
@@ -123,68 +130,59 @@ small {
 .halloumi_recipe{
   background-image: url("halloumi_recipe2.jpg");
 }
+
 .gorgonzola_recipe {
   background-image: url("gorgonzola_recipe.jpg");
 }
+
 .swiss_cheese_recipe {
   background: url("swiss_cheese_recipe.jpg") 3em center;
   background-size: cover;
 }
+
 .camembert_recipe{
   background-image: url("camembert_recipe.jpg");
 }
+
 .red_leicester_recipe {
-  background-image: url("red_leicester_recipe.jpg");
-  background-position: 0px 10px;
+    background-image: url("red_leicester_recipe.jpg");
+    background-position: 0px 10px;
 }
+
 .cottage_cheese_recipe {
-  background-image: url("cottage_cheese_recipe.jpg");
+    background-image: url("cottage_cheese_recipe.jpg");
 }
 
 p {
     text-align:center;
+    color: black;
     font-size: 1.5em;
 }
+
 #cheeseboard {
     height: 320px;
     width: auto;
     border-radius: 200px;
-    z-index: 1 !important;
 }
 
-.spin {
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 .centered_buttons {
     text-align: center;
     margin: 0 auto;
 }
+
 .progress-bar {
     background-image: url("wood.jpg");
     border: 1px solid grey;
     width: 100%;
     border-radius: 2px;
 }
+
 .navbar-fixed-bottom {
     background-color: rgba(255, 255, 255, 0.4);
     border: none;
     color:white;
 }
+
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -202,10 +200,12 @@ p {
     margin-top: -25px;
 }
 
-#twitterfeed {
-    z-index: 3 !important; 
+.twitter_navbar {
     position:relative;
 }
+
+
+/*cheeseboard spin*/
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
     to { -ms-transform: rotate(360deg); }
@@ -227,16 +227,34 @@ p {
     }
 }
 
+.spin {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
-/* CSS for the recipe boxes */
 
+/* recipe boxes */
 .cheese_recipe h1 {
     padding-bottom: 20px;
     text-align: center;
     font-size: 3em;
     background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
-    }
+}
 
 .cheese_recipe {
     margin-top: 10px;
@@ -325,6 +343,7 @@ p {
 .deg225 { transform: rotate(225deg) translate(27em) rotate(-225deg); }
 .deg315 { transform: rotate(315deg) translate(27em) rotate(-315deg); }
 */
+
 /* CSS to make name of cheese appear on hover */
 
 span.text-content {
@@ -353,21 +372,23 @@ span.text-content span {
 	vertical-align: middle;
 }
 
-/*ul.circle-container li:hover span.text-content {
+ul.circle-container li:hover span.text-content {
     opacity: 1;
     background: rgba(0,0,0,0.3);
-}*/
+}
 
 #about_text{
     background-image:url("wood.jpg");
     color:white;
     border-color:white;
 }
+
 .navbar-fixed-bottom{
     background-color: white;
 }
 
-/*this is where we make website responsive*/
+
+/*mobile responsiveness*/
 @media (max-width: 900px){
     #main_title {
         font-size: 5px;
