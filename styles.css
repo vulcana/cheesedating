@@ -193,6 +193,7 @@ p {
 .btn{
     background-image: url("wood.jpg");
     color: white;
+    border-width: 0;
 }
 
 #logo {

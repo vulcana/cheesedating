@@ -92,6 +92,10 @@ function cheeseonboard( event, ui ) {
   {
     $(".red_leicester_recipe" ).addClass("selected" );
   }
+    if (draggable.attr('id') == "cottage_cheese")
+  {
+    $(".cottage_cheese_recipe" ).addClass("selected" );
+  }
 }
 
 $(function() {
@@ -118,18 +122,6 @@ $("#make_button").mouseleave(function() {
   $("#cheeseboard").removeClass("spin" );
 }); 
 }); 
-
-// //reset button
-// $(function() {
-// $("#reset").click(function(){
-//     $(".cheese_recipe").hide();
-//     $(".cheese_recipe").removeClass("selected");
-//     $(".thumbnail").css({"border-color":"transparent"});
-//     $("#cheeseboard").removeClass("spin" );
-//     $(".ingredients").hide();
-//     $(".method").hide();
-// }); 
-// }); 
 
 
 //hide the divs containing method and ingredients as default
