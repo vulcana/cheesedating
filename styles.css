@@ -37,15 +37,16 @@
     border-radius: 1em;
     width: 100%;
 }
-/*a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
+
+a.cheese:hover,
+a.cheese:focus,
+a.cheese.active {
   border: 2px solid;
   border-color: #ffd500;
 }
-.thumbnail{
+.cheese{
     z-index: 2;
-}*/
+}
 
 #instructions {
     text-align: center;
