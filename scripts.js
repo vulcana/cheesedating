@@ -23,6 +23,8 @@ $(function() {
 //makes cheese img draggable
 $( init );
  
+$(".progress-bar").css("width", "0%");
+
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
 });
@@ -31,6 +33,9 @@ $(".make_meal").click(function(){
 });
 $(".tell_me_more").click(function(){
     $(".progress-bar").css("width", "100%");
+});
+$(".no_gross").click(function(){
+    $(".progress-bar").css("width", "0%");
 });
 
 function init() {

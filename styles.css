@@ -177,17 +177,18 @@ p {
     border-radius: 2px;
 }
 
-.navbar-fixed-bottom {
-    background-color: rgba(255, 255, 255, 0.4);
-    border: none;
-    color:white;
-}
 
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     width: 100%;
     position:fixed;
+}
+
+.navbar-default p {
+    color: #ffd500;
+    font-family: Londrina Shadow;
+    font-size: 2em;
 }
 
 .btn{
@@ -264,7 +265,7 @@ p {
 .ingredients {
     background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px 20px 0px 20px;
     padding-bottom: 20px;
 }
 
@@ -382,10 +383,6 @@ ul.circle-container li:hover span.text-content {
     background-image:url("wood.jpg");
     color:white;
     border-color:white;
-}
-
-.navbar-fixed-bottom{
-    background-color: white;
 }
 
 
