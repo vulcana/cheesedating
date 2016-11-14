@@ -192,7 +192,7 @@ $(".no_gross").click(function(){
 
 //show twitter feed when hover over twitter-btn. Looking to change this to first click show, second click hide. F
 $(function() {
-$(".twitter-btn").click(function(){
+$(".twitter-btn").hover(function(){
     $("#twitterfeed").show();
     $('html, body').animate({
       scrollTop: $("#twitterfeed").offset().top

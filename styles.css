@@ -185,7 +185,7 @@ p {
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    width: 100%;
+    width: cover;
     position:fixed;
 }
 
@@ -195,13 +195,8 @@ p {
 }
 
 #logo {
-    width: 22%;
+    width: 25%;
     margin-top: -25px;
-}
-
-#twitterfeed {
-    z-index: -1; 
-    position:relative;
 }
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
