@@ -284,11 +284,11 @@ p {
 
 .circle-container {
     position: relative;
-    width: 35em;
-    height: 35em;
+    width: 30em;
+    height: 30em;
     padding: 2.8em;
     border: none;
-    margin: 100px auto 100px;
+    margin: 110px auto 100px;
     list-style-type:none;
     text-align: center;
 }
@@ -305,17 +305,17 @@ p {
     display: block;
     position: absolute;
     top: 25%; left: 25%;
-    width: 30em; height: 30em;
-    margin: -7.5em;
+    width: 25em; height: 25em;
+    margin: -6.5em;
 }
 
 .circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(22em); }
-.deg45 { transform: rotate(45deg) translate(22em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(22em) rotate(-135deg); }
-.deg180 { transform: translate(-22em); }
-.deg225 { transform: rotate(225deg) translate(22em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translate(22em) rotate(-315deg); }
+.deg0 { transform: translate(20em); }
+.deg45 { transform: rotate(45deg) translate(20em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(20em) rotate(-135deg); }
+.deg180 { transform: translate(-20em); }
+.deg225 { transform: rotate(225deg) translate(20em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(20em) rotate(-315deg); }
 
 /* CSS to make name of cheese appear on hover */
 
@@ -327,11 +327,11 @@ span.text-content {
 	font-family:Londrina Shadow;
 	cursor: pointer;
 	display: table;
-	height: 15em;
+	height: 10em;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 15em;
+	width: 10em;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
