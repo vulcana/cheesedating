@@ -37,27 +37,40 @@ $(".tell_me_more").click(function(){
 });
 
 function init() {
-  $('#halloumi_cheese').draggable(
-  
-);
+  $('#halloumi_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".halloumi_recipe" ).removeClass("selected" ); 
+  }
+});
   $('#gorgonzola_cheese').draggable({
-    drag: gorgonzola_drag});
-  $('#swiss_cheese').draggable();
-  $('#camembert').draggable();
-  $('#red_leicester').draggable();
-  $('#cottage_cheese').draggable();
+  drag: function( event, ui ) {
+    $(".gorgonzola_recipe" ).removeClass("selected" ); 
+  }
+});
+  $('#swiss_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".swiss_cheese_recipe" ).removeClass("selected" ); 
+  }
+});
+  $('#camembert').draggable({
+  drag: function( event, ui ) {
+    $(".camembert_recipe" ).removeClass("selected" ); 
+  }
+});
+  $('#red_leicester').draggable({
+  drag: function( event, ui ) {
+    $(".red_leicester_recipe" ).removeClass("selected" ); 
+  }
+});
+  $('#cottage_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".cottage_cheese_recipe" ).removeClass("selected" ); 
+  }
+});
   $('#cheeseboard').droppable( {
    drop: cheeseonboard
         } );
     }  
-
-function gorgonzola_drag( event, ui ) {
-  var draggable = ui.draggable;
-  if (draggable.attr('id') == "gorgonzola_cheese")
-  {
-    $(".gorgonzola_recipe" ).removeClass("selected" );
-  }
-}
 
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
@@ -109,17 +122,17 @@ $("#make_button").mouseleave(function() {
 }); 
 }); 
 
-//reset button
-$(function() {
-$("#reset").click(function(){
-    $(".cheese_recipe").hide();
-    $(".cheese_recipe").removeClass("selected");
-    $(".thumbnail").css({"border-color":"transparent"});
-    $("#cheeseboard").removeClass("spin" );
-    $(".ingredients").hide();
-    $(".method").hide();
-}); 
-}); 
+// //reset button
+// $(function() {
+// $("#reset").click(function(){
+//     $(".cheese_recipe").hide();
+//     $(".cheese_recipe").removeClass("selected");
+//     $(".thumbnail").css({"border-color":"transparent"});
+//     $("#cheeseboard").removeClass("spin" );
+//     $(".ingredients").hide();
+//     $(".method").hide();
+// }); 
+// }); 
 
 
 //hide the divs containing method and ingredients as default
