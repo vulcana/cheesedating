@@ -47,6 +47,7 @@ p {
     margin-left: 5em;
     padding-right: -2em;
     float: right;
+    cursor: pointer;
 }
 
 .twitter_navbar {
