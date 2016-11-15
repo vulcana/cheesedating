@@ -1,4 +1,4 @@
-
+// make all links smooth scroll
 $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -20,9 +20,53 @@ $(function() {
 });
 
 
-//makes cheese img draggable
+//make cheese images draggable onto the cheeseboard
 $( init );
  
+function init() {
+  $('#halloumi_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".halloumi_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#gorgonzola_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".gorgonzola_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#swiss_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".swiss_cheese_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#camembert').draggable({
+  drag: function( event, ui ) {
+    $(".camembert_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#red_leicester').draggable({
+  drag: function( event, ui ) {
+    $(".red_leicester_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#cottage_cheese').draggable({
+  drag: function( event, ui ) {
+    $(".cottage_cheese_recipe" ).removeClass("selected" ); 
+  }
+});
+
+  $('#cheeseboard').droppable( {
+   drop: cheeseonboard
+        } );
+    }  
+
+    
+// make progress bar complete as user progresses down page
 $(".progress-bar").css("width", "0%");
 
 $(".cheese_image").click(function(){
@@ -38,41 +82,6 @@ $(".no_gross").click(function(){
     $(".progress-bar").css("width", "0%");
 });
 
-function init() {
-  $('#halloumi_cheese').draggable({
-  drag: function( event, ui ) {
-    $(".halloumi_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#gorgonzola_cheese').draggable({
-  drag: function( event, ui ) {
-    $(".gorgonzola_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#swiss_cheese').draggable({
-  drag: function( event, ui ) {
-    $(".swiss_cheese_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#camembert').draggable({
-  drag: function( event, ui ) {
-    $(".camembert_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#red_leicester').draggable({
-  drag: function( event, ui ) {
-    $(".red_leicester_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#cottage_cheese').draggable({
-  drag: function( event, ui ) {
-    $(".cottage_cheese_recipe" ).removeClass("selected" ); 
-  }
-});
-  $('#cheeseboard').droppable( {
-   drop: cheeseonboard
-        } );
-    }  
 
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
