@@ -116,14 +116,14 @@ p {
 .text-content {
     background: none;
     color: black;
-    font-size: 28px;
+    font-size: 23px;
     font-style: bold;
-    padding-right: 4em;
     font-family: 'Londrina Shadow', cursive;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
     top: calc(50% - 20px);
-    left: 12px;
+    left: 5px;
+    padding-right: 7px;
     text-align: center;
     float: center;
     width: 100%;
