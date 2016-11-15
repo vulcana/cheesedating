@@ -149,46 +149,55 @@ $(function() {
 
 $(function() {
 $(".halloumi_buttons.tell_me_more").click(function(){
-    $(".halloumi_ingredients").show(1500, swing);
-    $(".halloumi_method").show(1500, swing);
+    $(".halloumi_ingredients").show(1500);
+    $(".halloumi_method").show(1500);
   });
 }); 
 
 $(function() {
 $(".swiss_cheese_buttons.tell_me_more").click(function(){
-    $(".swiss_cheese_ingredients").show(1500, swing);
-    $(".swiss_cheese_method").show(1500, swing);
+    $(".swiss_cheese_ingredients:not(.red_leicester_ingredients)").show(1500);
+    $(".swiss_cheese_method:not(.red_leicester_method)").show(1500);
   });
 }); 
 
 $(function() {
 $(".camembert_buttons.tell_me_more").click(function(){
-    $(".camembert_ingredients").show(1500, swing);
-    $(".camembert_method").show(1500, swing);
+    $(".camembert_ingredients").show(1500);
+    $(".camembert_method").show(1500);
   });
 }); 
 
 $(function() {
 $(".red_leicester_buttons.tell_me_more").click(function(){
-    $(".red_leicester_ingredients").show(1500, swing);
-    $(".red_leicester_method").show(1500, swing);
+    $(".red_leicester_ingredients:not(.swiss_cheese_ingredients)").show(1500);
+    $(".red_leicester_method:not(.swiss_cheese_method)").show(1500);
   });
 }); 
 
 
 $(function() {
 $(".cottage_cheese_buttons.tell_me_more").click(function(){
-    $(".cottage_cheese_ingredients").show(1500, swing);
-    $(".cottage_cheese_method").show(1500, swing);
+    $(".cottage_cheese_ingredients").show(1500);
+    $(".cottage_cheese_method").show(1500);
   });
 }); 
 
 $(function() {
 $(".gorgonzola_buttons.tell_me_more").click(function(){
-    $(".gorgonzola_ingredients").show(1500, swing);
-    $(".gorgonzola_method").show(1500, swing);
+    $(".gorgonzola_ingredients:not(.swiss_cheese_ingredients)").show(1500);
+    $(".gorgonzola_method:not(.swiss_cheese_method)").show(1500);
   });
 }); 
+
+$(function() {
+$(".three_cheese_buttons.tell_me_more").click(function(){
+    $(".three_cheese_ingredients").show(1500);
+    $(".three_cheese_method").show(1500);
+  });
+}); 
+
+
 
 
 //the no, gross button hides the recipe and returns user to the top of the page and removes cheese selection
@@ -196,15 +205,66 @@ $(".gorgonzola_buttons.tell_me_more").click(function(){
 $(function() {
 $(".no_gross").click(function(){
     $(".cheese_recipe").hide();
-    $(".cheese_recipe").removeClass("selected");
+    //$(".cheese_recipe").removeClass("selected");
     $('html, body').animate({ scrollTop: 0 }, 'slow');
     $(".ingredients").hide();
     $(".method").hide();
-    $(".thumbnail").css({"border-color":"transparent"});
+    //$(".thumbnail").css({"border-color":"transparent"});
   });
 }); 
+// new
+// $(function() {
+// $(".halloumi_buttons.no_gross").click(function(){
+//       $("halloumi_recipe").hide();
+//     //$(".cheese_recipe").removeClass("selected");
+//     //$('html, body').animate({ scrollTop: 0 }, 'slow');
+//     $("halloumi_ingredients").hide();
+//     $("halloumi_method").hide();
+//     $(".thumbnail").css({"border-color":"transparent"});
 
 
+//   });
+// }); 
+
+// $(function() {
+// $(".swiss_cheese_buttons.no_gross").click(function(){
+//     $(".swiss_cheese_ingredients").show(1500, swing);
+//     $(".swiss_cheese_method").show(1500, swing);
+//   });
+// }); 
+
+// $(function() {
+// $(".camembert_buttons.no_gross").click(function(){
+//     $(".camembert_ingredients").show(1500, swing);
+//     $(".camembert_method").show(1500, swing);
+//   });
+// }); 
+
+// $(function() {
+// $(".red_leicester_buttons.no_gross").click(function(){
+//     $(".red_leicester_ingredients").show(1500, swing);
+//     $(".red_leicester_method").show(1500, swing);
+//   });
+// }); 
+
+
+// $(function() {
+// $(".cottage_cheese_buttons.no_gross").click(function(){
+//     $(".cottage_cheese_ingredients").show(1500, swing);
+//     $(".cottage_cheese_method").show(1500, swing);
+//   });
+// }); 
+
+// $(function() {
+// $(".gorgonzola_buttons.no_gross").click(function(){
+//     $(".gorgonzola_ingredients").show(1500, swing);
+//     $(".gorgonzola_method").show(1500, swing);
+//   });
+// }); 
+
+
+
+// new
 
 //hide twitter feed by default, and toggle on click
 $("#twitterfeed").hide();
