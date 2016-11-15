@@ -83,7 +83,6 @@ p {
     height: 320px;
     width: auto;
     border-radius: 200px;
-    z-index: 1;
 }
 
 .cheese {
@@ -101,7 +100,14 @@ p {
     display: block;
     margin: auto auto;
     width: 10em !important;
+}
+
+.col-md-2 {
     z-index: 2;
+}
+
+.col-md-4 {
+    z-index: 1;
 }
 
 /*box around the cheeses and css that makes their name appear on hover*/
