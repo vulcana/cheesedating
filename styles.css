@@ -12,6 +12,7 @@
     background-size: cover; 
     margin:0 auto;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 
@@ -76,7 +77,8 @@ p {
 /*cheeses and cheeseboard*/
 .cheese_bit{
     background: rgba(0, 0, 0, 0);
-    padding-bottom:100px;
+    padding-bottom:20px;
+    margin-bottom: 70px;
 }
 
 #cheeseboard {
@@ -245,7 +247,8 @@ a.cheese.active {
     width: 70%;
     background-size: cover;
     border-radius: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    margin-top: -40px;
 }
 
 .cheese_name {
@@ -303,10 +306,6 @@ a.cheese.active {
     font-size: 3em;
     background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
-}
-
-.cheese_recipe {
-    margin-top: 10px;
 }
 
 .ingredients {
