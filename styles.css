@@ -82,10 +82,10 @@ p {
 }
 
 #cheeseboard {
-    height: 320px;
+    height: 300px;
     width: auto;
     border-radius: 200px;
-}
+   }
 
 .cheese {
     position: relative;
@@ -428,7 +428,17 @@ a.cheese.active {
         font-size: 5px;
     }
     .cheese_image {
-        width: 0.2em;
-        height: inherit;
+        width: 2em;
+        height: auto;
+    }
+
+    .navbar-default p{
+    	font-size:2em;
+    }
+
+    #cheeseboard{
+         height:150px;
+         width:auto;
+        
     }
 }
