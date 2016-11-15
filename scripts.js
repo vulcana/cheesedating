@@ -67,7 +67,7 @@ function init() {
 
     
 // make progress bar complete as user progresses down page
-$(".progress-bar").css("width", "0%");
+$(".progress-bar").css("width", "10%");
 
 $(".cheese_image").click(function(){
     $(".progress-bar").css("width", "33%");
