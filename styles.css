@@ -85,7 +85,9 @@ p {
     height: 300px;
     width: auto;
     border-radius: 200px;
+    margin: 0 auto;
    }
+
 
 .cheese {
     position: relative;
@@ -104,11 +106,19 @@ p {
     width: 10em !important;
 }
 
-.col-md-2 {
+#camembert_div{
+	padding-top: 50px;
+}
+
+#halloumi_div{
+	padding-top: 50px
+}
+
+.col-xs-2 {
     z-index: 2;
 }
 
-.col-md-4 {
+.col-xs-4 {
     z-index: 1;
 }
 
@@ -428,7 +438,7 @@ a.cheese.active {
         font-size: 5px;
     }
     .cheese_image {
-        width: 2em;
+        width: 5em;
         height: auto;
     }
 
@@ -440,5 +450,17 @@ a.cheese.active {
          height:150px;
          width:auto;
         
+    }
+
+    .title_section h2{
+    	font-size:20px;
+    }
+
+    #halloumi_div{
+    	padding-top: 0;
+    }
+
+    #camembert_div{
+    	padding-top: 0;
     }
 }
