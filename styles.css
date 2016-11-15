@@ -1,14 +1,10 @@
+/*page container/background*/
 .container-fluid {
     padding: 0.5em;
 }
 
 .jumbotron {
     padding: 1em;
-}
-
-.cheese_bit{
-    background: rgba(0, 0, 0, 0);
-    padding-bottom:100px;
 }
 
 .page_background{
@@ -18,45 +14,8 @@
     width: 100%;
 }
 
-#main_title h1 {
-    text-align: center;
-    color:#ffd500;
-    font-size: 7em;
 
-}
-
-.title_section {
-    margin: 5em auto 0em auto;
-}
-
-.make_meal {
-    margin: 0 auto;
-    text-align: center;
-    font-family: Londrina Shadow;
-    font-size: 2em;
-}
-
-#make_button {
-    margin-top: 20px;
-}
-
-.progress {
-    width: 50%;
-    margin: 1em auto;
-}
-
-.cheese_image {
-    width: 10em !important;
-}
-
-#instructions {
-    text-align: center;
-}
-
-#reset {
-    margin-top: 100px;
-}
-
+/*general text formatting*/
 h1 {
     font-size: 20em;
     font-family:'Londrina Shadow', cursive;
@@ -69,141 +28,23 @@ h2 {
     padding-bottom: 20px;
 }
 
-
-.cheese_recipe p {
-    text-align: center;
-    font-size: 1.5em;
-    color: rgba(255,255,255,1);
-    background: black;
-    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-    padding: 10px;
-    line-height: 28px;
-    text-align: justify;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    height:30px;
-    transition: height .5s;
-    -webkit-transition: height .5s;
-    -moz-transition: height .5s;
-}
-
-.cheese_recipe {
-    margin: 0 auto;
-    width: 70%;
-    background-size: cover;
-    border-radius: 10px;
-    margin-bottom: 80px;
-}
-
-.cheese_name {
-    font-weight: bold;
-}
-
-#make_button:hover {
-    box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
-}
-
-#make_button:active{
-    background-color: rgba(0,0,0,.7)
-}
-
-small {
- opacity: 0; 
-}
-
-.show-description p {
- height: 150px; 
-}
-
-.show-description small {
- opacity:1; 
-}
-
-#three_cheese_macaroni{
-    background-image: url("MacAndCheese_Recipe.jpg");
-}
-
-.halloumi_recipe{
-  background-image: url("halloumi_recipe2.jpg");
-}
-
-.gorgonzola_recipe {
-  background-image: url("gorgonzola_recipe.jpg");
-}
-
-.swiss_cheese_recipe {
-  background: url("swiss_cheese_recipe.jpg") 3em center;
-  background-size: cover;
-}
-
-.camembert_recipe{
-  background-image: url("camembert_recipe.jpg");
-}
-
-.red_leicester_recipe {
-    background-image: url("red_leicester_recipe.jpg");
-    background-position: 0px 10px;
-}
-
-.cottage_cheese_recipe {
-    background-image: url("cottage_cheese_recipe.jpg");
-}
-
 p {
     text-align:center;
     color: black;
     font-size: 1.5em;
 }
 
-#cheeseboard {
-    height: 320px;
-    width: auto;
-    border-radius: 200px;
-}
 
-.centered_buttons {
-    text-align: center;
-    margin: 0 auto;
-}
-
-.progress-bar {
-    background-image: url("wood.jpg");
-    border: 1px solid grey;
-    width: 100%;
-    border-radius: 2px;
-}
-
-
-.navbar-default {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    width: 100%;
-    position:fixed;
-}
-
-.navbar-default p {
-    color: #ffd500;
-    font-family: Londrina Shadow;
-    font-size: 3em;
-}
-
-.btn-success, .btn-danger{
-    background-image: url("wood.jpg");
-    color: white;
-    border-width: 0;
-}
-
+/*top navbar*/
 #logo {
-    width: 22%;
+    width: 23%;
     margin-top: -25px;
 }
 
 #twitter_button_logo {
     width: 23%;
     margin-top: -4.5em;
+    margin-left: 5em;
     padding-right: -2em;
     float: right;
 }
@@ -218,6 +59,87 @@ p {
     float: right;
 }
 
+
+/*page header*/
+#main_title h1 {
+    text-align: center;
+    color:#ffd500;
+    font-size: 7em;
+}
+
+.title_section {
+    margin: 0 auto;
+}
+
+
+/*cheeses and cheeseboard*/
+.cheese_bit{
+    background: rgba(0, 0, 0, 0);
+    padding-bottom:100px;
+}
+
+#cheeseboard {
+    height: 320px;
+    width: auto;
+    border-radius: 200px;
+}
+
+.cheese {
+    position: relative;
+    display:table-cell;
+    height: 150px;
+    width: 150px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.cheese_image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto auto;
+    width: 10em !important;
+}
+
+/*box around the cheeses and css that makes their name appear on hover*/
+.text-content {
+    background: none;
+    color: black;
+    font-size: 28px;
+    font-style: bold;
+    padding-right: 4em;
+    font-family: 'Londrina Shadow', cursive;
+    cursor: pointer;
+    position:absolute;
+    top: calc(50% - 20px);
+    left: 12px;
+    text-align: center;
+    float: center;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+span.text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a.cheese:hover span.text-content {
+    opacity: 1;
+}
+
+a.cheese:hover,
+a.cheese:focus,
+a.cheese.active {
+    border: 2px solid;
+    border-color: #ffd500;
+    background: rgba(0,0,0,0.3);
+}
 
 
 /*cheeseboard spin*/
@@ -259,6 +181,109 @@ p {
     animation-duration: 4000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+
+
+/*'make me a meal' button*/
+.make_meal {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 2em;
+}
+
+#make_button {
+    margin-top: 20px;
+}
+
+#make_button:hover {
+    box-shadow: 5px 5px 2.5px rgba(0,0,0,.4);
+}
+
+#make_button:active{
+    background-color: rgba(0,0,0,.7)
+}
+
+
+#instructions {
+    text-align: center;
+}
+
+
+/*cheese recipes*/
+.cheese_recipe p {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgba(255,255,255,1);
+    background: black;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+    padding: 10px;
+    line-height: 28px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height:30px;
+    transition: height .5s;
+    -webkit-transition: height .5s;
+    -moz-transition: height .5s;
+}
+
+.cheese_recipe {
+    margin: 0 auto;
+    width: 70%;
+    background-size: cover;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.cheese_name {
+    font-weight: bold;
+}
+
+#three_cheese_macaroni{
+    background-image: url("MacAndCheese_Recipe.jpg");
+}
+
+.halloumi_recipe{
+  background-image: url("halloumi_recipe2.jpg");
+}
+
+.gorgonzola_recipe {
+  background-image: url("gorgonzola_recipe.jpg");
+}
+
+.swiss_cheese_recipe {
+  background: url("swiss_cheese_recipe.jpg") 3em center;
+  background-size: cover;
+}
+
+.camembert_recipe{
+  background-image: url("camembert_recipe.jpg");
+}
+
+.red_leicester_recipe {
+    background-image: url("red_leicester_recipe.jpg");
+    background-position: 0px 10px;
+}
+
+.cottage_cheese_recipe {
+    background-image: url("cottage_cheese_recipe.jpg");
+}
+
+
+.centered_buttons {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.btn-success, .btn-danger{
+    background-image: url("wood.jpg");
+    color: white;
+    border-width: 0;
 }
 
 
@@ -361,57 +386,31 @@ p {
 
 /* CSS to make name of cheese appear on hover, to make cheese pictures the same size, and to centre cheeses in square boxes */
 
-.cheese {
-    position: relative;
-    display:table-cell;
-    height: 150px;
-    width: 150px;
-    vertical-align: middle;
-    margin: auto;
+
+/*bottom progress bar*/
+.progress {
+    width: 50%;
+    margin: 1em auto;
 }
 
-.cheese_image {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: auto auto;
-}
-
-span.text-content {
-	background: none;
-	color: black;
-	font-size: 20px;
-	font-style: bold;
-	font-family:Londrina Shadow;
-	cursor: pointer;
-    position:absolute;
-    top: calc(50% - 20px);
-    left: 12px;
-    text-align: center;
+.progress-bar {
+    background-image: url("wood.jpg");
+    border: 1px solid grey;
     width: 100%;
-	opacity: 0;
-	-webkit-transition: opacity 500ms;
-	-moz-transition: opacity 500ms;
-	-o-transition: opacity 500ms;
-	transition: opacity 500ms;
+    border-radius: 2px;
 }
 
-span.text-content span {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    width: 100%;
+    position:fixed;
 }
 
-a.cheese:hover span.text-content {
-    opacity: 1;
-}
-
-a.cheese:hover,
-a.cheese:focus,
-a.cheese.active {
-    border: 2px solid;
-    border-color: #ffd500;
-    background: rgba(0,0,0,0.3);
+.navbar-default p {
+    color: #ffd500;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 3em;
 }
 
 
