@@ -149,44 +149,44 @@ $(function() {
 
 $(function() {
 $(".halloumi_buttons.tell_me_more").click(function(){
-    $(".halloumi_ingredients").show();
-    $(".halloumi_method").show();
+    $(".halloumi_ingredients").show(1500, swing);
+    $(".halloumi_method").show(1500, swing);
   });
 }); 
 
 $(function() {
 $(".swiss_cheese_buttons.tell_me_more").click(function(){
-    $(".swiss_cheese_ingredients").show();
-    $(".swiss_cheese_method").show();
+    $(".swiss_cheese_ingredients").show(1500, swing);
+    $(".swiss_cheese_method").show(1500, swing);
   });
 }); 
 
 $(function() {
 $(".camembert_buttons.tell_me_more").click(function(){
-    $(".camembert_ingredients").show();
-    $(".camembert_method").show();
+    $(".camembert_ingredients").show(1500, swing);
+    $(".camembert_method").show(1500, swing);
   });
 }); 
 
 $(function() {
 $(".red_leicester_buttons.tell_me_more").click(function(){
-    $(".red_leicester_ingredients").show();
-    $(".red_leicester_method").show();
+    $(".red_leicester_ingredients").show(1500, swing);
+    $(".red_leicester_method").show(1500, swing);
   });
 }); 
 
 
 $(function() {
 $(".cottage_cheese_buttons.tell_me_more").click(function(){
-    $(".cottage_cheese_ingredients").show();
-    $(".cottage_cheese_method").show();
+    $(".cottage_cheese_ingredients").show(1500, swing);
+    $(".cottage_cheese_method").show(1500, swing);
   });
 }); 
 
 $(function() {
 $(".gorgonzola_buttons.tell_me_more").click(function(){
-    $(".gorgonzola_ingredients").show();
-    $(".gorgonzola_method").show();
+    $(".gorgonzola_ingredients").show(1500, swing);
+    $(".gorgonzola_method").show(1500, swing);
   });
 }); 
 
