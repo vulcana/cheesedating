@@ -292,14 +292,17 @@ a.cheese.active {
 
 #three_cheese_macaroni{
     background-image: url("MacAndCheese_Recipe.jpg");
+    background-size: cover;
 }
 
 .halloumi_recipe{
   background-image: url("halloumi_recipe2.jpg");
+  background-size: cover;
 }
 
 .gorgonzola_recipe {
   background-image: url("gorgonzola_recipe.jpg");
+  background-size: cover;
 }
 
 .swiss_cheese_recipe {
@@ -309,15 +312,17 @@ a.cheese.active {
 
 .camembert_recipe{
   background-image: url("camembert_recipe.jpg");
+  background-size: cover;
 }
 
 .red_leicester_recipe {
     background-image: url("red_leicester_recipe.jpg");
-    background-position: 0px 10px;
+    background-size: cover;
 }
 
 .cottage_cheese_recipe {
     background-image: url("cottage_cheese_recipe.jpg");
+    background-size: cover;
 }
 
 .cheese_recipe h1 {
@@ -352,11 +357,11 @@ a.cheese.active {
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-top: 10px;
     padding-bottom: 20px;
 }
 
 .method h2 {
+    padding-top:10px;
     padding-bottom: 15px;
 }
 
