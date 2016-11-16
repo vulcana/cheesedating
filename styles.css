@@ -54,9 +54,9 @@ p {
 }
 
 #twitter_button_logo {
-    width: 20%;
+    width: 23%;
     margin-top: -4.5em;
-    margin-right: -1em;
+    margin-right: -2em;
     padding-right: -2em;
     float: center;
     cursor: pointer;
@@ -86,7 +86,7 @@ p {
 .cheese_bit{
     background: rgba(0, 0, 0, 0);
     padding-bottom:20px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 #cheeseboard {
@@ -315,6 +315,7 @@ a.cheese.active {
     font-size: 3em;
     background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
+    margin-top: 1em;
 }
 
 .ingredients {
@@ -378,6 +379,14 @@ a.cheese.active {
     border-width: 0;
 }
 
+.tell_me_more {
+    border: 2px solid green;
+}
+
+.no_gross {
+    border: 2px solid red;
+}
+
 
 /*bottom progress bar*/
 .progress {
@@ -397,7 +406,7 @@ a.cheese.active {
 }
 
 
-/*mobile responsiveness*/
+/*mobile responsivity*/
 @media (max-width: 900px){
     #main_title {
         font-size: 5px;
