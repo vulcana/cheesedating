@@ -5,9 +5,9 @@
 
 .page_background{
     background-image: url("background5.jpg");
-    background-size: cover; 
-    margin:0;
+    background-size: cover;
     width: 100%;
+    margin: 0;
 }
 
 
@@ -32,10 +32,25 @@ p {
 
 
 /*top navbar*/
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    height: 35%;
+    width: 100%;
+    position:fixed;
+}
+
+.navbar-default p {
+    color: #ffd500;
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 3em;
+}
+
 #logo {
     width: 28%;
     margin-top: -25px;
     margin-left: -2em;
+    z-index: 4;
 }
 
 #twitter_button_logo {
@@ -45,6 +60,7 @@ p {
     padding-right: -2em;
     float: center;
     cursor: pointer;
+    z-index: 3;
 }
 
 .twitter_navbar {
@@ -414,19 +430,9 @@ a.cheese.active {
     border-radius: 2px;
 }
 
-.navbar-default {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    width: 100%;
-    position:fixed;
+.navbar-fixed-bottom {
+    margin-bottom: -6em;
 }
-
-.navbar-default p {
-    color: #ffd500;
-    font-family: 'Londrina Shadow', cursive;
-    font-size: 3em;
-}
-
 
 /*mobile responsiveness*/
 @media (max-width: 900px){
