@@ -14,9 +14,15 @@ $(function() {
     });
 });
 
-//hide all recipes as default!
-$(function() {
-  $('.cheese_recipe').hide()
+
+
+//hide twitter feed by default, and toggle on click
+$("#twitterfeed").hide();
+
+$('#twitter_button').click(function () {
+    $('#twitterfeed').toggle("slide", {
+          direction: "right"
+      }, 1000);
 });
 
 
@@ -65,53 +71,37 @@ function init() {
         } );
     }  
 
-    
-// make progress bar complete as user progresses down page
-$(".progress-bar").css("width", "10%");
-
-$(".cheese_image").click(function(){
-    $(".progress-bar").css("width", "33%");
-});
-$(".make_meal").click(function(){
-    $(".progress-bar").css("width", "66%");
-});
-$(".tell_me_more").click(function(){
-    $(".progress-bar").css("width", "100%");
-});
-$(".no_gross").click(function(){
-    $(".progress-bar").css("width", "0%");
-});
-
-
+// make dragging a cheese onto the cheeseboard give the cheese the 'selected' class
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
   $("#cheeseboard").addClass("spin" );
   if (draggable.attr('id') == "halloumi_cheese")
   {
-    $(".halloumi_recipe" ).addClass("selected" );
+    $(".halloumi_recipe" ).addClass("selected");
   }
   if (draggable.attr('id') == "gorgonzola_cheese")
   {
-    $(".gorgonzola_recipe" ).addClass("selected" );
+    $(".gorgonzola_recipe" ).addClass("selected");
   }
   if (draggable.attr('id') == "swiss_cheese")
   {
-    $(".swiss_cheese_recipe" ).addClass("selected" );
+    $(".swiss_cheese_recipe" ).addClass("selected");
   }
   if (draggable.attr('id') == "camembert")
   {
-    $(".camembert_recipe" ).addClass("selected" );
+    $(".camembert_recipe" ).addClass("selected");
   }
   if (draggable.attr('id') == "red_leicester")
   {
-    $(".red_leicester_recipe" ).addClass("selected" );
+    $(".red_leicester_recipe" ).addClass("selected");
   }
     if (draggable.attr('id') == "cottage_cheese")
   {
-    $(".cottage_cheese_recipe" ).addClass("selected" );
+    $(".cottage_cheese_recipe" ).addClass("selected");
   }
 }
 
+// create alert if no cheese is dropped onto the cheeseboard when 'make me a meal' button is clicked
 $(function() {
 $("#make_button").click(function(){
     if (document.querySelector('.selected') == null) {
@@ -124,6 +114,7 @@ $("#make_button").click(function(){
     }, 2000);
 });
   });
+    
 
 //cheeseboard spins when mouse is on on the makemeal button area too.
 $(function() {
@@ -138,6 +129,12 @@ $("#make_button").mouseleave(function() {
 }); 
 
 
+//hide all recipes as default
+$(function() {
+  $('.cheese_recipe').hide()
+});
+
+
 //hide the divs containing method and ingredients as default
 $(function() {
     $(".ingredients").hide();
@@ -146,7 +143,6 @@ $(function() {
 
 
 //the ingredients and method appear when user clicks 'tell me more' button
-
 $(function() {
 $(".halloumi_buttons.tell_me_more").click(function(){
     $(".halloumi_ingredients").show(1500);
@@ -198,21 +194,7 @@ $(".three_cheese_buttons.tell_me_more").click(function(){
 }); 
 
 
-
-
-//the no, gross button hides the recipe and returns user to the top of the page and removes cheese selection
-
-// $(function() {
-// $(".no_gross").click(function(){
-//     $(".cheese_recipe").hide();
-    //$(".cheese_recipe").removeClass("selected");
-    //$('html, body').animate({ scrollTop: 0 }, 'slow');
-    // $(".ingredients").hide();
-    // $(".method").hide();
-    //$(".thumbnail").css({"border-color":"transparent"});
-//   });
-// }); 
-// new
+//the 'no, gross' button hides the recipe and returns user to the top of the page and removes cheese selection
 $(function() {
 $(".halloumi_buttons.no_gross").click(function(){
     $(".halloumi_recipe").hide(1500);
@@ -264,16 +246,18 @@ $(".three_cheese_buttons.no_gross").click(function(){
 }); 
 
 
+// make progress bar complete as user progresses down page
+$(".progress-bar").css("width", "10%");
 
-
-// new
-
-//hide twitter feed by default, and toggle on click
-$("#twitterfeed").hide();
-
-$('#twitter_button').click(function () {
-    $('#twitterfeed').toggle("slide", {
-          direction: "right"
-      }, 1000);
+$(".cheese_image").click(function(){
+    $(".progress-bar").css("width", "33%");
 });
-
+$(".make_meal").click(function(){
+    $(".progress-bar").css("width", "66%");
+});
+$(".tell_me_more").click(function(){
+    $(".progress-bar").css("width", "100%");
+});
+$(".no_gross").click(function(){
+    $(".progress-bar").css("width", "0%");
+});
