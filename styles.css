@@ -59,12 +59,15 @@ p {
     z-index: 4;
 }
 
+#twitter_button {
+    margin-right: -10em;
+}
+
 #twitter_button_logo {
     width: 23%;
     margin-top: -4.5em;
     margin-right: -2em;
     padding-right: -2em;
-    float: right;
     cursor: pointer;
     z-index: 3;
 }
