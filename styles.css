@@ -54,17 +54,13 @@ p {
 }
 
 #twitter_button_logo {
-    width: 18%;
+    width: 20%;
     margin-top: -4.5em;
-    margin-left: 63em;
+    margin-right: -1em;
     padding-right: -2em;
     float: center;
     cursor: pointer;
     z-index: 3;
-}
-
-.twitter_navbar {
-    position: relative;
 }
 
 #twitterfeed {
