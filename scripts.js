@@ -15,7 +15,6 @@ $(function() {
 });
 
 
-
 //hide twitter feed by default, and toggle on click
 $("#twitterfeed").hide();
 
@@ -71,6 +70,7 @@ function init() {
         } );
     }  
 
+
 // make dragging a cheese onto the cheeseboard give the cheese the 'selected' class
 function cheeseonboard( event, ui ) {
   var draggable = ui.draggable;
@@ -100,6 +100,7 @@ function cheeseonboard( event, ui ) {
     $(".cottage_cheese_recipe" ).addClass("selected");
   }
 }
+
 
 // create alert if no cheese is dropped onto the cheeseboard when 'make me a meal' button is clicked
 $(function() {

@@ -134,6 +134,7 @@ p {
     z-index: 1;
 }
 
+
 /*box around the cheeses and css that makes their name appear on hover*/
 .text-content {
     background: none;
@@ -311,21 +312,6 @@ a.cheese.active {
     background-image: url("cottage_cheese_recipe.jpg");
 }
 
-
-.centered_buttons {
-    text-align: center;
-    margin: 1em auto;
-}
-
-
-.btn-success, .btn-danger{
-    background-image: url("wood.jpg");
-    color: white;
-    border-width: 0;
-}
-
-
-/* recipe boxes */
 .cheese_recipe h1 {
     padding-bottom: 20px;
     text-align: center;
@@ -382,43 +368,18 @@ a.cheese.active {
   content: counter(item) ".";
 }
 
-/*.circle-container {
-    position: relative;
-    width: 30em;
-    height: 30em;
-    padding: 2.8em;
-    border: none;
-    margin: 110px auto 100px;
-    list-style-type:none;
+
+/*yes/no buttons*/
+.centered_buttons {
     text-align: center;
+    margin: 1em auto;
 }
 
-.circle-container a {
-    display: block;
-    position: absolute;
-    top: 50%; left: 50%;
-    width: 10em; height: 10em;
-    margin: -6.5em;
+.btn-success, .btn-danger{
+    background-image: url("wood.jpg");
+    color: white;
+    border-width: 0;
 }
-
-.circle-container span.cheeseboard {
-    display: block;
-    position: absolute;
-    top: 25%; left: 25%;
-    width: 25em; height: 25em;
-    margin: -6.5em;
-}
-
-.circle-container img { display: block; width: 100%; }
-.deg0 { transform: translate(27em); }
-.deg45 { transform: rotate(45deg) translate(27em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(27em) rotate(-135deg); }
-.deg180 { transform: translate(-27em); }
-.deg225 { transform: rotate(225deg) translate(27em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translate(27em) rotate(-315deg); }
-*/
-
-/* CSS to make name of cheese appear on hover, to make cheese pictures the same size, and to centre cheeses in square boxes */
 
 
 /*bottom progress bar*/
@@ -437,6 +398,7 @@ a.cheese.active {
 .navbar-fixed-bottom {
     margin-bottom: -6em;
 }
+
 
 /*mobile responsiveness*/
 @media (max-width: 900px){
