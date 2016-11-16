@@ -6,8 +6,9 @@
 .page_background{
     background-image: url("background5.jpg");
     background-size: cover;
-    width: 100%;
-    margin: 0;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position:center;
 }
 
 
@@ -86,7 +87,7 @@ p {
 .cheese_bit{
     background: rgba(0, 0, 0, 0);
     padding-bottom:20px;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 #cheeseboard {
@@ -402,7 +403,7 @@ a.cheese.active {
 }
 
 .navbar-fixed-bottom {
-    margin-bottom: -18em;
+    margin-bottom: -5em;
 }
 
 
