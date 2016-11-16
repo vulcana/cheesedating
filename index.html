@@ -25,19 +25,36 @@
 
 				<div id="top_of_page"></div><!-- placeholder for logo to link back to -->
 				
-				<!-- top navbar (including logo, about and #cheese) -->
-				<nav class="navbar navbar-default top_navbar">
+				<!-- check css isn't overriding bootstrap -->
+<!-- 				<nav class="navbar navbar-default">
 	  				<div class="container-fluid">
 	    				<div class="navbar-header">
-	      					<a class="navbar-brand" href="#top_of_page"><img id="logo" alt="Brand" src="logo.png"></a>
+	      					<a href="#top_of_page"><img id="logo" alt="Brand" src="logo.png"></a>
 	      				</div>
-	      				<ul class="nav navbar-nav">
+	      				<ul class="nav navbar-nav navbar-right">
       						<li id="twitter_button"><img src="twitter_logo.png" id="twitter_button_logo" alt="Twitter Feed" class="pull-right"></li>
       					<div id="twitterfeed">
  							<a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
  						</div>
 	  				</div>
-				</nav>
+				</nav> -->
+
+				<!-- top navbar (including logo, about and #cheese) -->
+				<nav class="navbar navbar-default navbar-fixed-top">
+      				<div class="container">
+        				<div class="navbar-header">
+          					<a class="navbar-brand" href="#top_of_page"><img id="logo" alt="Brand" src="logo.png"></a>
+       					 </div>
+	        			<div id="navbar" class="navbar-collapse collapse">
+	          				<ul class="nav navbar-nav navbar-right">
+	            				<li id="twitter_button"><img src="twitter_logo.png" id="twitter_button_logo" alt="Twitter Feed" class="pull-right"></li>
+      						</ul>
+      						<div id="twitterfeed">
+ 							<a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
+ 						</div>
+        				</div><!--/.nav-collapse -->
+      				</div><!-- /.container -->
+    			</nav><!-- /.navbar-fixed-top -->
 
 
 				<!-- main body of the page -->

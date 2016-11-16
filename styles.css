@@ -40,8 +40,6 @@ p {
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    height: 35%;
-    width: 100%;
     position:fixed;
 }
 
@@ -51,24 +49,17 @@ p {
     font-size: 3em;
 }
 
-#logo {
-    width: 23%;
-    margin-top: -25px;
-    margin-left: -2em;
+.navbar-brand {
     cursor: pointer;
     z-index: 4;
 }
 
-#twitter_button {
-    margin-right: -10em;
+#logo, #twitter_button_logo {
+    width: 20%;
+    margin-top: -5em;
 }
 
 #twitter_button_logo {
-    width: 23%;
-    margin-top: -4.5em;
-    margin-right: -2em;
-    padding-right: -2em;
-    cursor: pointer;
     z-index: 3;
 }
 
