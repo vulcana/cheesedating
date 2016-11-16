@@ -3,16 +3,11 @@
     padding: 0.5em;
 }
 
-.jumbotron {
-    padding: 1em;
-}
-
 .page_background{
     background-image: url("background5.jpg");
     background-size: cover; 
-    margin:0 auto;
+    margin:0;
     width: 100%;
-    margin-bottom: 50px;
 }
 
 
