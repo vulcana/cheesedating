@@ -56,8 +56,8 @@ p {
 #twitter_button_logo {
     width: 20%;
     margin-top: -4.5em;
-    margin-right: -1em;
-    padding-right: -2em;
+    margin-right: 3em;
+    padding-right: 2em;
     float: center;
     cursor: pointer;
     z-index: 3;
