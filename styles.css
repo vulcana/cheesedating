@@ -38,8 +38,9 @@ p {
 
 /*top navbar*/
 #logo {
-    width: 23%;
+    width: 28%;
     margin-top: -25px;
+    margin-left: -2em;
 }
 
 #twitter_button_logo {
