@@ -234,7 +234,7 @@ a.cheese.active {
     margin: 0 auto;
     text-align: center;
     font-family: 'Londrina Shadow', cursive;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 #make_button {
@@ -427,10 +427,13 @@ a.cheese.active {
     #cheeseboard{
          max-height:150px;
          width:auto;
-         height: auto;
-        
+         height: auto; 
     }
 
+    #make_meal {
+        font-size:2em;
+    }
+    
     .title_section h2{
     	font-size:20px;
     }
