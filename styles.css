@@ -283,6 +283,7 @@ a.cheese.active {
     border-radius: 10px;
     margin-bottom: 100px;
     margin-top: -40px;
+    padding-bottom: 20px;
 }
 
 .cheese_name {
