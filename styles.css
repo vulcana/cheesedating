@@ -40,7 +40,6 @@ p {
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    position:fixed;
 }
 
 .navbar-default p {
@@ -56,7 +55,10 @@ p {
 
 #logo, #twitter_button_logo {
     width: 20%;
-    margin-top: -5em;
+}
+
+#logo {
+    margin-top: 2em;
 }
 
 #twitter_button_logo {
@@ -65,7 +67,6 @@ p {
 
 #twitterfeed {
     width: 15%;
-    margin-right: 7em;
     float: right;
 }
 
@@ -408,10 +409,6 @@ a.cheese.active {
     border: 1px solid grey;
     width: 100%;
     border-radius: 2px;
-}
-
-.navbar-fixed-bottom {
-    margin-bottom: -5em;
 }
 
 
