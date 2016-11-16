@@ -18,7 +18,7 @@ $(function() {
 //hide twitter feed by default, and toggle on click
 $("#twitterfeed").hide();
 
-$('#twitter_button').click(function () {
+$('#twitter_button_logo').click(function () {
     $('#twitterfeed').toggle("slide", {
           direction: "right"
       }, 1000);

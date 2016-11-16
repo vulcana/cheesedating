@@ -399,6 +399,7 @@ a.cheese.active {
     background-image: url("wood.jpg");
     color: white;
     border-width: 0;
+    z-index: 5;
 }
 
 .tell_me_more {
@@ -433,7 +434,7 @@ a.cheese.active {
     #make_meal {
         font-size:2em;
     }
-    
+
     .title_section h2{
     	font-size:20px;
     }
