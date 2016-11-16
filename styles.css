@@ -260,6 +260,7 @@ a.cheese.active {
     position: absolute;
     bottom: 0;
     margin: 0;
+    margin-bottom: 20px;
     height:30px;
     transition: height .5s;
     -webkit-transition: height .5s;
@@ -281,36 +282,42 @@ a.cheese.active {
 
 #three_cheese_macaroni{
     background-image: url("MacAndCheese_Recipe.jpg");
+    background-size: cover;
 }
 
 .halloumi_recipe{
   background-image: url("halloumi_recipe2.jpg");
+  background-size: cover;
 }
 
 .gorgonzola_recipe {
   background-image: url("gorgonzola_recipe.jpg");
+  background-size: cover;
 }
 
 .swiss_cheese_recipe {
-  background: url("swiss_cheese_recipe.jpg") 3em center;
+  background: url("swiss_cheese_recipe.jpg");
   background-size: cover;
 }
 
 .camembert_recipe{
   background-image: url("camembert_recipe.jpg");
+  background-size: cover;
 }
 
 .red_leicester_recipe {
     background-image: url("red_leicester_recipe.jpg");
-    background-position: 0px 10px;
+    background-size: cover;
 }
 
 .cottage_cheese_recipe {
     background-image: url("cottage_cheese_recipe.jpg");
+    background-size: cover;
 }
 
 .cheese_recipe h1 {
     padding-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
     font-size: 3em;
     background-color: rgba(255,255,255,0.7);
