@@ -271,6 +271,7 @@ a.cheese.active {
     margin: 0 auto;
     width: 70%;
     background-size: cover;
+    border: 3px solid #ffd500;
     border-radius: 10px;
     margin-bottom: 100px;
     margin-top: -40px;
