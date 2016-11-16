@@ -402,9 +402,18 @@ a.cheese.active {
     #main_title {
         font-size: 5px;
     }
-    .cheese_image {
-        width: 5em;
+
+    a.cheese{
+        width: auto;
         height: auto;
+        }    
+
+    .cheese_image {
+        min-height: 40px;
+        min-width: 40px;
+        width: auto;
+        height: auto;
+        padding: 2px;
     }
 
     .navbar-default p{
@@ -415,6 +424,9 @@ a.cheese.active {
          max-height:150px;
          width:auto;
          height: auto;
+         min-height: 70px;
+         min-width: 70px;
+         margin: 5px;
         
     }
 
