@@ -36,7 +36,7 @@ p {
 }
 
 
-/*top navbar*/
+/*top navbar & bottom progress bar*/
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -48,6 +48,18 @@ p {
     font-size: 3em;
 }
 
+.progress {
+    width: 50%;
+    margin: 1em auto;
+}
+
+.progress-bar {
+    background-image: url("wood.jpg");
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 2px;
+}
+
 .navbar-brand {
     cursor: pointer;
     z-index: 4;
@@ -55,6 +67,7 @@ p {
 
 #logo, #twitter_button_logo {
     width: 20%;
+    margin: 0 -2em;
 }
 
 #logo {
@@ -395,20 +408,6 @@ a.cheese.active {
 
 .no_gross {
     border: 2px solid red;
-}
-
-
-/*bottom progress bar*/
-.progress {
-    width: 50%;
-    margin: 1em auto;
-}
-
-.progress-bar {
-    background-image: url("wood.jpg");
-    border: 1px solid grey;
-    width: 100%;
-    border-radius: 2px;
 }
 
 
