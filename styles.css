@@ -6,6 +6,9 @@
 .page_background{
     background-image: url("background5.jpg");
     background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
     background-repeat: repeat;
     background-size: contain;
     background-position:center;
