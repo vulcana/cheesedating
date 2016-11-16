@@ -1,140 +1,488 @@
 <DOCTYPE! html>
 <html>
-	<head>
+	
 
+	<head>
+		<title>Cheese Dating</title>
+		<link rel="icon" type="image/x-icon" href="http://tinypic.com/r/fzamts/9"/>
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
 		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet"/> 
 		<script src="jquery-3.1.1.min.js"></script>
 		<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-		<script src="scripts.js"></script>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		<link rel="stylesheet" href="jquery-ui.min.css">
         <script src="jquery-ui.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
-		<div class= "container-fluid">
-			<div class= "jumbotron">
-				<span id= "main_title"><h1>Cheese Dating</h1></span>
-				<!-- Because of the thumbnail property I've used, my vectorised (first) image has been unvectorised, but I quite like how it looks when you select it. Shall we leave it like that for now? R x They are great! Can you make them the same size? M -->
-				<span id= "instructions"><h2>Select your cheese(s)</h2></span>
-				<div class="row cheeseimg">
-					<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="halloumi_cheese"><img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi" title='Halloumi'></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="gorgonzola_cheese"><img src="gorgonzola.png" class="img-responsive cheese_image" alt="Gorgonzola" title='Gorgonzola'></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="swiss_cheese"><img src="swiss_cheese.png" class="img-responsive cheese_image" alt="Swiss Cheese" title='Swiss Cheese'></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="camembert"><img src="camembert.svg" class="img-responsive cheese_image" alt="Camembert" title='Camembert'></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="red_leicester"><img src="red_leicester.svg" class="img-responsive cheese_image" alt="Red Leicester" title='Red Leicester'></a></div>
-	  				<div class="col-lg-2 col-md-2"><a href="#" class="thumbnail" id="cottage_cheese"><img src="cottage_cheese.svg" class="img-responsive cheese_image" alt="Cottage Cheese" title='Cottage Cheese'></a></div>
-				</div>
-				<div class="row make_meal">
-				
-					<div class="col-lg-12 col-md-12 boarddiv">
-					<img src="cheeseboard.jpg" id="cheeseboard">
-					</div>
-
-					<input type="submit" class="btn btn-lg btn-success make_meal" value="Make Me a Meal!" id="make_button"> 
-					<button class="btn" id="reset">Reset</button>
-				</div>
-			</div>
-			<div class="container halloumi_recipe cheese_recipe">
-				<h1>Quinoa with Halloumi</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-				<div class='row'>
-					<div class='col-md-offset-1 col-sm-4 ingredients'>
-						<h2>Ingredients</h2>
-						<ul>
-							<li>100g (3½oz) quinoa, rinsed</li>
-							<li>1 small red onion, sliced</li>
-							<li>1 tsp cumin seeds</li>
-							<li>2 tbsp olive oil</li>
-							<li>8 baby plum tomatoes, halved</li>
-							<li>125g (4oz) halloumi cheese</li>
-							<li>1 tbsp red wine vinegar</li>
-							<li>Salt and freshly ground black pepper</li>
-							<li>A good handful of mint leaves</li>
-							<li>Pitta breads and yogurt, to serve</li>
-						</ul>
-					</div>
-					<div class="col-sm-5 col-md-offset-1 method">
-						<h2>Method</h2>
-						<ol>
-							<li>Put the quinoa in a pan with 300ml (½ pint) cold water. Bring to the boil, then reduce the heat and simmer for 20 mins until the water is absorbed.</li>
-							<li>Meanwhile, heat the grill and put the onion slices on a baking sheet. Sprinkle with the cumin seeds and 1 tbsp oil. Grill for 5 mins, stir, then add the tomatoes and cook until they are just softened.</li>
-							<li>Cut the cheese into 6 thin slices. Cook them on a hot griddle pan, or under the grill, for about a minute on each side.</li>
-							<li>Drain the quinoa, stir in the grilled tomatoes and onions and all the cooking juices on the baking sheet, along with another tbsp of oil, the vinegar and seasoning. Spoon into a bowl. Shred the mint leaves into the salad and stir in carefully. Arrange the cheese on top. Serve with pitta breads and yogurt.</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-			<div class="container gorgonzola_recipe cheese_recipe">
-				<h1>Gorgonzola Recipe</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-			</div>
-			<div class="container swiss_cheese_recipe cheese_recipe">
-				<h1>Swiss Cheese Recipe</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-			</div>
-			<div class="container camembert_recipe cheese_recipe">
-				<h1>Baked Camembert</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-				<div class='row'>
-					<div class='col-md-offset-1 col-sm-4 ingredients'>
-						<h2>Ingredients</h2>
-						<ul>
-							<li>1 whole camembert</li>
-							<li>1 garlic clove, sliced</li>
-							<li>3-4 sprigs fresh thyme</li>
-							<li>1 tsp olive oil</li>
-						</ul>
-					</div>
-					<div class="col-sm-5 col-md-offset-1 method">
-						<h2>Method</h2>
-						<ol>
-							<li>Preheat the oven to 200C/400F/Gas 6</li>
-							<li>Pierce the top of the cheese in several places with a sharp knife and insert pieces of garlic and sprigs of thyme into the slits</li>
-							<li>Drizzle the cheese with olive oil and place on a baking sheet, leaving the cheese in its box. Bake in the oven for ten minutes, or until the centre of the cheese is melted</li>
-						</ol>
-					</div>
-				</div>	
-			</div>
-			<div class="container red_leicester_recipe cheese_recipe">
-				<h1>Red Leicester Recipe</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-			</div>
-			<div class="container cottage_cheese_recipe cheese_recipe">
-				<h1>Cottage Cheese Recipe</h1>
-				<div class="btn-group" role="group">
- 					<button type="button" class="btn btn-success tell_me_more">Tell me more</button>
-  					<button type="button" class="btn btn-danger no_gross">No, gross</button>
-				</div>
-			</div>
-			<div class="progress_section">
-				<p>How close am I to dinner?</p>
-				<div class="progress">
-		 			<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-		    			<span class="sr-only">60% Complete</span>
-		  			</div>
-				</div>	
-			</div>
-			<div class=twitterfeed>
-			     <a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
-			</div>
-		</div>
-
-	</body>
 	
+
+	<body>
+
+		<!-- jumbotron container and page background -->
+		<div class= "container-fluid">
+			<div class="jumbotron page_background" id="background_drop">
+
+				<div id="top_of_page"></div><!-- placeholder for logo to link back to -->
+
+				<!-- top navbar (including logo, about and #cheese) -->
+				<nav class="navbar navbar-default navbar-fixed-top">
+      				<div class="container">
+        				<div class="navbar-header">
+          					<a class="navbar-brand" href="#top_of_page"><img id="logo" alt="Brand" src="logo.png"></a>
+       					 </div>
+	        			<div id="navbar" class="navbar-collapse collapse">
+	          				<ul class="nav navbar-nav navbar-right">
+	            				<li id="twitter_button"><img src="twitter_logo.png" id="twitter_button_logo" alt="Twitter Feed" class="pull-right"></li>
+      						</ul>
+      						<div id="twitterfeed">
+ 							<a class="twitter-timeline" href="https://twitter.com/hashtag/cheese" data-widget-id="796340793707532293">#cheese Tweets</a>
+ 						</div>
+        				</div><!--/.nav-collapse -->
+      				</div><!-- /.container -->
+    			</nav><!-- /.navbar-fixed-top -->
+
+
+				<!-- main body of the page -->
+
+				<div class= "jumbotron cheese_bit">
+					
+					<div class="title_section">
+						<span id= "main_title" class="col-xs-12"><h1>Cheese Dating</h1></span>
+						<span id= "instructions"><h2>Drag your cheese(s) onto the cheeseboard</h2></span>
+					</div>
+
+				<!-- cheeses and cheeseboard section-->
+					
+					<!-- row containing red leicester & cottage cheese	 -->
+					<div class="row">
+
+					   	<div class="col-xs-2"></div>
+
+					   	<!-- red leicester -->
+					   	<div class="col-xs-2">
+					   		<a href="#" class="cheese deg225" id="red_leicester">
+					  			<img src="red_leicester_vec.png" class="img-responsive cheese_image" alt="Red Leicester" title='Red Leicester'>
+					  			<span class="text-content">Red Leicester</span>
+					  		</a>
+					    </div>
+
+					    <div class="col-xs-4">
+					    </div>
+					   
+					   	<!-- cottage cheese -->
+					    <div class="col-xs-2">
+						    <a href="#" class="cheese deg315" id="cottage_cheese">
+						  		<img src="cottage_cheese_vec.png" class="img-responsive cheese_image" alt="Cottage Cheese" title='Cottage Cheese'>
+						  		<span class="text-content">Cottage Cheese</span>
+						  	</a>
+					    </div>
+					    
+					    <div class="col-xs-2"></div>
+					    
+					</div><!-- end of row -->
+
+					<!-- row containing camembert, the cheeseboard and halloumi					      -->
+				    <div class="row">
+
+				    	<!-- camembert -->
+				     	<div class="col-xs-2"></div>
+				     	<div class="col-xs-2" id="camembert_div">
+				 	     	<a href="#" class="cheese deg180" id="camembert">
+				  				<img src="camembert_vec.png" class="img-responsive cheese_image" alt="Camembert" title='Camembert'>
+				  				<span class="text-content">Camembert</span>
+				  			</a>
+				     	</div>
+				     	
+				     	<!-- cheeseboard -->
+				     	<div class="col-xs-4">
+				 	    <img src="cheeseboard_vec.png" id="cheeseboard" class="img-responsive center">
+				 	    </div>
+				    
+				    	<!-- halloumi -->
+					    <div class="col-xs-2" id="halloumi_div">
+					 	    <a href="#" class="cheese deg0" id="halloumi_cheese">
+								<img src="halloumi.png" class="img-responsive cheese_image" alt="Halloumi" title='Halloumi'>
+								<span class="text-content">Halloumi</span>
+							</a>
+					    </div>
+					    
+					    <div class="col-xs-2"></div>
+					
+					</div><!-- end of row -->
+
+					<!-- row containing swiss cheese & gorgonzola -->
+					<div class="row">
+				 		<div class="col-xs-2"></div>
+				   		
+				   		<!-- swiss cheese -->
+				   		<div class="col-xs-2">
+				  			<a href="#" class="cheese deg135" id="swiss_cheese">
+				  				<img src="swiss_cheese_vec.png" class="img-responsive cheese_image" alt="Swiss Cheese" title='Swiss Cheese'>
+				  				<span class="text-content"><span>Swiss Cheese</span></span>
+				  			</a>
+				   		</div>
+
+				   		<div class="col-xs-4">
+				   		</div>
+				   		
+				   		<!-- gorgonzola -->
+				   		<div class="col-xs-2">
+				   			<a href="#" class="cheese deg45" id="gorgonzola_cheese">
+				  				<img src="gorgonzola_vec.png" class="img-responsive cheese_image" alt="Gorgonzola" title='Gorgonzola'>
+				  				<span class="text-content">Gorgonzola</span>
+				  			</a>
+				   		</div>
+				   		<div class="col-xs-2"></div>
+				 	
+				 	</div><!-- end of row -->
+
+				 	<!-- make me a meal button -->
+				 	<div class="row" id="make_div">
+				 		<div class="col-xs-4 col-xs-offset-4">
+				 			<input type="submit" class="btn btn-lg btn-success make_meal center-block" value="Make Me a Meal!" id="make_button"> 
+						</div>
+					</div>
+
+				</div><!-- end of cheese bit -->
+
+
+				<!-- cheese recipes -->
+
+				<!-- Quinoa with Halloumi -->
+				<div class="container halloumi_recipe cheese_recipe">
+					<h1>Quinoa with Halloumi</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success halloumi_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger halloumi_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+					
+					<!-- halloumi recipe -->
+					<div class='row'>
+						
+					<!-- halloumi ingredients -->
+						<div class='col-sm-3 ingredients halloumi_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>100g (3½oz) quinoa, rinsed</li>
+								<li>1 small red onion, sliced</li>
+								<li>1 tsp cumin seeds</li>
+								<li>2 tbsp olive oil</li>
+								<li>8 baby plum tomatoes, halved</li>
+								<li>125g (4oz) <span class="cheese_name">halloumi cheese</span></li>
+								<li>1 tbsp red wine vinegar</li>
+								<li>Salt and freshly ground black pepper</li>
+								<li>A good handful of mint leaves</li>
+								<li>Pitta breads and yogurt, to serve</li>
+							</ul>
+						</div>
+						
+						<!-- halloumi method -->
+						<div class="col-sm-8 method halloumi_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Put the quinoa in a pan with 300ml (½ pint) cold water. Bring to the boil, then reduce the heat and simmer for 20 mins until the water is absorbed.</li>
+								<li>Meanwhile, heat the grill and put the onion slices on a baking sheet. Sprinkle with the cumin seeds and 1 tbsp oil. Grill for 5 mins, stir, then add the tomatoes and cook until they are just softened.</li>
+								<li>Cut the cheese into 6 thin slices. Cook them on a hot griddle pan, or under the grill, for about a minute on each side.</li>
+								<li>Drain the quinoa, stir in the grilled tomatoes and onions and all the cooking juices on the baking sheet, along with another tbsp of oil, the vinegar and seasoning. Spoon into a bowl. Shred the mint leaves into the salad and stir in carefully. Arrange the cheese on top. Serve with pitta breads and yogurt.</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of halloumi section -->
+
+
+				<!-- gorgonzola recipe -->
+				<div class="container gorgonzola_recipe cheese_recipe">
+					<h1>Bacon, Spinach and Gorgonzola pasta</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success gorgonzola_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger gorgonzola_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+					
+					<!-- gorgonzola recipe -->
+					<div class='row'>
+
+						<!-- gorgonzola ingredients -->
+						<div class='col-sm-3 ingredients gorgonzola_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>350g penne pasta</li>
+								<li>1tbsp vegetable oil</li>
+								<li>1 onion, chopped</li>
+								<li>8 rashers smoked back bacon, chopped</li>
+								<li>200mls hot vegetable stock</li>
+								<li>150g pack <span class="cheese_name">gorgonzola</span>, cubed</li>
+								<li>300g frozen peas</li>
+								<li>250g spinach</li>
+							</ul>
+						</div>
+						
+						<!-- gorgonzola method -->
+						<div class="col-sm-8 method gorgonzola_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Cook the pasta following pack instructions. Meanwhile, heat the oil in a large frying pan, then add the onion and cook for 3 mins until starting to soften.</li>
+								<li>Add the bacon, cook for a further 5 mins, then pour in the hot stock and bring to the boil. Simmer for a few mins until the liquid has reduced slightly.</li>
+								<li>Stir in the peas, followed by the Gorgonzola, until the cheese has melted and the peas are defrosted. </li>
+								<li>Quickly stir through the spinach to wilt. Drain the pasta and mix with the sauce, then serve.</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of gorgonzola section -->
+
+				<!-- Swiss Cheese Schnitzel -->
+				<!-- URL of swiss cheese recipe: http://www.bbcgoodfood.com/recipes/3459/swiss-cheese-schnitzel -->
+				<div class="container swiss_cheese_recipe cheese_recipe">
+					<h1>Swiss Cheese Schnitzel</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success swiss_cheese_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger swiss_cheese_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+					
+					<!-- swiss cheese recipe -->
+					<div class='row'>
+						
+						<!-- swiss cheese ingredients -->
+						<div class='col-sm-3 ingredients swiss_cheese_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>4 slices white bread (about 100g/4oz)</li>
+								<li>¼tsp baking powder</li>
+								<li>½tsp dry English mustard powder</li>
+								<li>Pinch of freshly ground white pepper</li>
+								<li>25g (1oz) butter cut into small cubes, plus extra to serve</li>
+								<li>50g <span class="cheese_name">Gruyère or Emmenthal</span></li>
+								<li>4 x 175g/6oz pork steak, trimmed of fat</li>
+								<li>1 egg, beaten</li>
+								<li>2 tbsp olive oil</li>
+							</ul>
+						</div>
+						
+						<!-- swiss cheese method -->
+						<div class="col-sm-8 method swiss_cheese_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Whizz the bread in a food processor until fine. Mix breadcrumbs and cheese together, tip onto a large plate, then season. Dip the pork in the egg, then press both sides into the breadcrumb mixture to coat all over.</li>
+								<li>Heat the oil in a large non-stick frying pan and fry the steaks for 3-4 mins on each side until cooked through. Serve with a crisp salad or try the Swiss-style salad, below.</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of swiss cheese section -->
+
+
+				<!-- Baked Camembert -->
+				<div class="container camembert_recipe cheese_recipe">
+					<h1>Baked Camembert</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success camembert_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger camembert_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+
+					<!-- camembert recipe -->
+					<div class='row'>
+						
+						<!-- camembert ingredients -->
+						<div class='col-sm-3 ingredients camembert_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>1 whole <span class="cheese_name">camembert</span></li>
+								<li>1 garlic clove, sliced</li>
+								<li>3-4 sprigs fresh thyme</li>
+								<li>1 tsp olive oil</li>
+							</ul>
+						</div>
+						
+						<!-- camembert method -->
+						<div class="col-sm-8 method camembert_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Preheat the oven to 200C/400F/Gas 6</li>
+								<li>Pierce the top of the cheese in several places with a sharp knife and insert pieces of garlic and sprigs of thyme into the slits</li>
+								<li>Drizzle the cheese with olive oil and place on a baking sheet, leaving the cheese in its box. Bake in the oven for ten minutes, or until the centre of the cheese is melted</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of camembert section -->
+
+
+				<!-- Red Leicester Scones with Plum & Onion Compote -->
+				<!-- URL of red leicester recipe: http://www.dailymail.co.uk/femail/food/article-1328823/Recipe-Red-Leicester-cheese-scones-plum-onion-compote.html -->
+				<div class="container red_leicester_recipe cheese_recipe">
+					<h1>Red Leicester Scones with Plum &amp; Onion Compote</h1>
+					<div class="centered_buttons">
+						<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success red_leicester_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger red_leicester_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+					</div>
+					
+					<!-- recipe -->
+					<div class='row'>
+
+						<!-- red leicester ingredients -->
+						<div class='col-sm-3 ingredients red_leicester_ingredients'>
+							<h2>Ingredients</h2>
+							<h3>For the scones</h3>
+							<ul>
+								<li>175g (9¾oz) self-raising flour</li>
+								<li>¼tsp baking powder</li>
+								<li>½tsp dry English mustard powder</li>
+								<li>Pinch of freshly ground white pepper</li>
+								<li>25g (1oz) butter cut into small cubes, plus extra to serve</li>
+								<li>100g (3½oz) <span class="cheese_name">mature Red Leicester cheese</span>, roughly grated</li>
+								<li>Pinch of salt</li>
+								<li>1 large egg</li>
+								<li>2-3tbsp full fat milk</li>
+							</ul>
+							<h3>For the compote</h3>
+							<ul>
+								<li>400g (14oz) shallots, peeled and broken into lobes or cut in half if large</li>
+								<li>2tbsp sunflower oil</li>
+								<li>200g (7oz) caster sugar</li>
+								<li>400g (14oz) plums halved, stoned and quartered</li>
+								<li>250ml (9fl oz) Vinaigre de Reims or another good white wine vinegar</li>
+								<li>½tsp chilli flakes, finely ground</li>
+								<li>2tsp salt</li>
+							</ul>
+						</div>
+						
+						<!-- red leicester method -->
+						<div class="col-sm-8 method red_leicester_method">
+							<h2>Method</h2>
+							<ol>
+								<li>First make the compote by putting the shallots and oil in a large, heavy-based pan over a medium heat, stirring to ensure they become an even brown colour.</li>
+								<li>Add the sugar and 3tbsp water, leave on a low heat until the sugar has dissolved, then increase the heat a little until it turns a golden caramel. Add the plums and coat in the caramel. Remove from the heat then add the vinegar - it will spit a lot!</li>
+								<li>When it has calmed down, return to the heat, add the salt and chilli flakes and let it bubble on a medium heat, stirring often, for about 25 minutes to cook the onions.</li>
+								<li>Fill 4 x 175ml (6fl oz) small glass jars. It will keep for a few months in the fridge.</li>
+								For the scones, preheat the oven to 220°C/gas 7. Sift the flour, baking powder, mustard, salt and pepper into a bowl. Rub in the butter to make a crumbly texture, then mix in the cheese. 
+								<li>In a jug, mix the egg and milk together and gradually cut the liquid into the mixture with a round-bladed knife to make a dough. Then bring it together with your hands to form a ball, being careful not to over work it.</li>
+								<li>Put it onto a lightly floured surface, press out to about 1cm (½in) thickness and cut into rough rectangular shapes, using up all the dough. Jagged edges are fine. Re-roll any scraps.</li>
+								<li>Place on an oven tray and bake immediately for 12-15 minutes until risen and just golden. Cool on a wire rack and serve with butter and compote.</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of red leicester section -->
+
+
+				<!-- Cottage Cheese Pancakes -->
+				<!-- URL of cottage cheese recipe: http://www.recipeshubs.com/cottage-cheese-pancake/47741 -->
+				<div class="container cottage_cheese_recipe cheese_recipe">
+					<h1>Cottage Cheese Pancakes</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success cottage_cheese_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger cottage_cheese_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+					
+					<!-- cottage cheese recipe -->
+					<div class='row'>
+						
+						<!-- cottage cheese ingredients -->
+						<div class='col-sm-3 ingredients cottage_cheese_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>Half a cup of rolled oats</li>
+								<li>3 eggs</li>
+								<li>A little butter or oil for frying</li>
+								<li>Half a cup of <span class="cheese_name">cottage cheese</span></li>
+								<li>Sliced banana and maple syrup to serve</li>
+							</ul>
+						</div>
+						
+						<!-- cottage cheese method -->
+						<div class="col-sm-8 method cottage_cheese_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Mix all ingredients together in a bowl or a blender</li>
+								<li>Fry the pancake batter in a pan with a little oil or butter on a medium heat</li>
+								<li>Serve with sliced banana and maple syrup or your choce of topping</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of cottage cheese section -->
+
+			
+				<!-- Three Cheese Macaroni -->
+				
+				<!-- header -->
+				<div class="container gorgonzola_recipe red_leicester_recipe swiss_cheese_recipe cheese_recipe" id="three_cheese_macaroni">
+					<h1>Three Cheese Macaroni</h1>
+
+					<!-- yes/no buttons -->
+					<div class="centered_buttons">
+						<div class="btn-group" role="group">
+		 					<button type="button" class="btn btn-success three_cheese_buttons tell_me_more">Tell me more</button>
+		  					<button type="button" class="btn btn-danger three_cheese_buttons no_gross">No, gross</button>
+						</div>
+					</div>
+
+					<!-- recipe -->
+					<div class='row'>
+						
+						<!-- three cheese macaroni ingredients -->
+						<div class='col-sm-3 ingredients three_cheese_ingredients'>
+							<h2>Ingredients</h2>
+							<ul>
+								<li>50g baguette, cut into small chunks</li>
+								<li>2 tbsp butter, plus 1 tbsp melted</li>
+								<li>350g macaroni</li>
+								<li>100g of <span class="cheese_name">red leicester cheese</span>, grated</li>
+								<li>100g of <span class="cheese_name">swiss cheese</span>, grated</li>
+								<li>50g of crumbled <span class="cheese_name">gorgonzola</span>, grated</li>
+								<li>1 garlic clove, finely chopped</li>
+								<li>1tsp English mustard powder</li>
+								<li>3 tbsp plain flour</li>
+							</ul>
+						</div>
+						
+						<!-- three cheese macaroni method -->
+						<div class="col-sm-8 method three_cheese_method">
+							<h2>Method</h2>
+							<ol>
+								<li>Heat oven to 200C/fan 180C/gas 6. Spread the chunks of bread over a baking sheet, drizzle with the melted butter and season. Bake for 6 mins until crisp, then set aside.</li>
+								<li>Boil the pasta for 2 mins less than stated on the pack. Meanwhile, melt the remaining butter in a saucepan. Add the garlic and mustard, cook for 1 min, then stir in the flour. Cook for 1 min more, then gradually whisk in the milk until you have a lump-free sauce. Simmer for 5 mins, whisking constantly until thickened. Take off the heat, then stir in all the cheeses, reserving 50g of the swiss cheese.</li>
+								<li>Stir the pasta and some seasoning into the cheesy sauce, then tip into a large ovenproof dish, or 4 individual dishes. Scatter over the bread and remaining swiss cheese, then bake for 20 mins until crisp and golden. Can be frozen before baking – defrost thoroughly before cooking.</li>
+							</ol>
+						</div><!-- end of method -->
+					</div><!-- end of recipe -->
+				</div><!-- end of 3 cheese macaroni section -->
+
+
+				<!-- bottom progress bar -->
+				<div class="container">
+					<nav class="navbar navbar-default navbar-fixed-bottom">
+						<p>How close am I to dinner?</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+							<span class="sr-only">60% Complete</span>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+			</div><!--page background-->
+		</div><!-- page container -->
+	</body>
+	<script src="scripts.js"></script>
 </html>
